@@ -86,4 +86,41 @@ export const dict: Translations = {
     'Je wachtwoord moet 1 hoofdletter bevatten',
   your_password_must_have_8_characters_or_more:
     'Je wachtwoord moet 8 tekens of meer bevatten',
+    
+  // New landing page translations
+  slogan: 'Bedrijven transformeren met intelligente automatisering',
+  get_started: 'Aan de slag',
+  learn_more: 'Meer informatie',
+  our_products: 'Onze Producten',
+  our_services: 'Onze Diensten',
+  trusted_by: 'Vertrouwd door',
+  product_ai_automation: 'AI Automatisering',
+  product_ai_automation_desc: 'Stroomlijn je workflows met onze geavanceerde AI-automatiseringstools',
+  product_data_analytics: 'Data Analyse',
+  product_data_analytics_desc: 'Zet je gegevens om in bruikbare inzichten met ons analyseplatform',
+  product_custom_solutions: 'Op maat gemaakte oplossingen',
+  product_custom_solutions_desc: 'Op maat gemaakte AI-oplossingen voor jouw specifieke bedrijfsbehoeften',
+  service_consulting: 'AI Consulting',
+  service_consulting_desc: 'Deskundige begeleiding bij het implementeren van AI in je organisatie',
+  service_implementation: 'Implementatie',
+  service_implementation_desc: 'End-to-end implementatie van AI-oplossingen voor je bedrijf',
+  service_training: 'Training & Ondersteuning',
+  service_training_desc: 'Uitgebreide training en doorlopende ondersteuning voor je team',
+  reference_company1: 'Acme Corp',
+  reference_company2: 'TechGlobal',
+  reference_company3: 'Innovate Inc',
+  reference_company4: 'Future Systems',
+  
+  // Contact form
+  contact_us: 'Neem Contact Op',
+  contact_page_description: 'Heeft u een vraag of wilt u meer weten over onze diensten? Vul het onderstaande formulier in en we nemen zo snel mogelijk contact met u op.',
+  your_name: 'Uw naam',
+  name: 'Naam',
+  message: 'Bericht',
+  enter_your_message: 'Voer hier uw bericht in...',
+  send_message: 'Verstuur Bericht',
+  please_enter_your_name: 'Voer alstublieft uw naam in',
+  please_enter_your_message: 'Voer alstublieft uw bericht in',
+  please_enter_at_least_10_characters: 'Voer minimaal 10 tekens in',
+  contact_form_submitted_successfully: 'Bedankt voor uw bericht! We nemen snel contact met u op.'
 }

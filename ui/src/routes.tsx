@@ -8,6 +8,7 @@ import { LandingPage } from './pages/LandingPage'
 import { VerifyEmailPage } from './pages/VerifyEmailPage'
 import { NotFoundPage } from './pages/NotFoundPage'
 import { BasePage } from './pages/BasePage'
+import { ContactPage } from './pages/ContactPage'
 
 export function ProtectedRoute(props: { route: () => JSXElement }): JSXElement {
   const { user, loading } = useUser()
@@ -46,13 +47,7 @@ export const routes: RouteDefinition[] = [
   },
   {
     path: '/contact',
-    component: () => (
-      <BasePage title="Contact">
-        <div class="flex justify-center items-center min-h-[50vh]">
-          <h1 class="text-2xl font-bold">Contact</h1>
-        </div>
-      </BasePage>
-    ),
+    component: () => <ContactPage />,
   },
   {
     path: '/verify-email',

@@ -83,6 +83,14 @@ export async function resendVerificationMail() {
   return post('api/resend_email_verification', {})
 }
 
+export async function submitContactForm(name: string, email: string, message: string) {
+  return post('api/contact', {
+    name: name,
+    email: email,
+    message: message,
+  })
+}
+
 export async function whoAmI() {
   return get('api/whoami')
 }

@@ -84,4 +84,41 @@ export const dict = {
     'Your password must have 1 uppercase letter',
   your_password_must_have_8_characters_or_more:
     'Your password must have 8 characters or more',
+  
+  // New landing page translations
+  slogan: 'Transforming businesses with intelligent automation',
+  get_started: 'Get Started',
+  learn_more: 'Learn More',
+  our_products: 'Our Products',
+  our_services: 'Our Services',
+  trusted_by: 'Trusted By',
+  product_ai_automation: 'AI Automation',
+  product_ai_automation_desc: 'Streamline your workflows with our advanced AI automation tools',
+  product_data_analytics: 'Data Analytics',
+  product_data_analytics_desc: 'Turn your data into actionable insights with our analytics platform',
+  product_custom_solutions: 'Custom Solutions',
+  product_custom_solutions_desc: 'Tailored AI solutions designed for your specific business needs',
+  service_consulting: 'AI Consulting',
+  service_consulting_desc: 'Expert guidance to help you implement AI in your organization',
+  service_implementation: 'Implementation',
+  service_implementation_desc: 'End-to-end implementation of AI solutions for your business',
+  service_training: 'Training & Support',
+  service_training_desc: 'Comprehensive training and ongoing support for your team',
+  reference_company1: 'Acme Corp',
+  reference_company2: 'TechGlobal',
+  reference_company3: 'Innovate Inc',
+  reference_company4: 'Future Systems',
+  
+  // Contact form
+  contact_us: 'Contact Us',
+  contact_page_description: 'Have a question or want to learn more about our services? Fill out the form below and we\'ll get back to you as soon as possible.',
+  your_name: 'Your name',
+  name: 'Name',
+  message: 'Message',
+  enter_your_message: 'Enter your message here...',
+  send_message: 'Send Message',
+  please_enter_your_name: 'Please enter your name',
+  please_enter_your_message: 'Please enter your message',
+  please_enter_at_least_10_characters: 'Please enter at least 10 characters',
+  contact_form_submitted_successfully: 'Thank you for your message! We\'ll get back to you soon.'
 }
