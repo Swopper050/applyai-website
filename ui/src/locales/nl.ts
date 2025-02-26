@@ -1,6 +1,4 @@
-import { Translations } from '../context/LocaleProvider'
-
-export const dict: Translations = {
+export const dict = {
   hello_template: (name: string) => `Hallo ${name}`,
   a_puppy: 'Een puppy!',
   account: 'Account',
@@ -28,13 +26,27 @@ export const dict: Translations = {
   enter_the_6_digit_code_generated_by_your_authenticator_app:
     'Voer de 6-cijferige code in die is gegenereerd door je authenticator-app',
   forgot_password: 'Wachtwoord vergeten?',
+  groningse_ai_local_honest_independent: "AI op z'n Gronings: lokaal, transparant en onafhankelijk",
   here_is_a_picture_of_a: 'Hier is een foto van een ',
   home: 'Home',
   if_a_user_with_this_email_exists_a_reset_password_mail_has_been_sent:
     'Als een gebruiker met dit e-mailadres bestaat, is er een e-mail voor het opnieuw instellen van het wachtwoord verzonden',
+  learn_more: 'Meer informatie',
+  learn_more_p1:
+    `We leven in een wereld waarin Artificial Intelligence (AI) ongekende nieuwe mogelijkheden,
+    maar ook onzekerheid en soms angst met zich meebrengt. Wat moeten we met deze technologie?
+    Hoe zorgen je goed voor mensen en voor de aarde, maar benutten je wel de beste technologie van deze tijd?
+    Hoe bereid je je bedrijf of medewerkers voor op veranderingen die er gaan komen?
+    Welke kansen liggen er voor jouw bedrijf? En welke kansen zeg je bewust nee tegen?
+    En als alles in handen is van de grootste techbedrijven ter wereld, wat betekent dat dan?`,
+  learn_more_p2: 
+    `Wij helpen jou om de volgende stap te zetten in de wereld van AI, een stap die past bij jouw bedrijf en jouw waarden.
+    Neem contact op voor een volledig gratis en vrijblijvend gesprek.`,
   login: 'Login',
   logout: 'Logout',
   applyai: 'ApplyAI',
+  make_your_next_step:
+    'Begin nu met leren wat AI voor je kan betekenen',
   new_password: 'Nieuw wachtwoord',
   no: 'Nee',
   password: 'Wachtwoord',
@@ -89,11 +101,8 @@ export const dict: Translations = {
     
   // New landing page translations
   slogan: 'Bedrijven transformeren met intelligente automatisering',
-  get_started: 'Aan de slag',
-  learn_more: 'Meer informatie',
   our_products: 'Onze Producten',
   our_services: 'Onze Diensten',
-  trusted_by: 'Vertrouwd door',
   product_ai_automation: 'AI Automatisering',
   product_ai_automation_desc: 'Stroomlijn je workflows met onze geavanceerde AI-automatiseringstools',
   product_data_analytics: 'Data Analyse',
@@ -110,6 +119,7 @@ export const dict: Translations = {
   reference_company2: 'TechGlobal',
   reference_company3: 'Innovate Inc',
   reference_company4: 'Future Systems',
+  place_your_image_here: 'Plaats hier uw afbeelding',
   
   // Contact form
   contact_us: 'Neem Contact Op',
@@ -122,5 +132,12 @@ export const dict: Translations = {
   please_enter_your_name: 'Voer alstublieft uw naam in',
   please_enter_your_message: 'Voer alstublieft uw bericht in',
   please_enter_at_least_10_characters: 'Voer minimaal 10 tekens in',
-  contact_form_submitted_successfully: 'Bedankt voor uw bericht! We nemen snel contact met u op.'
+  contact_form_submitted_successfully: 'Bedankt voor uw bericht! We nemen snel contact met u op.',
+  
+  // Footer
+  footer_description: 'Lokale AI-oplossingen uit Groningen. Ethisch, transparant en afgestemd op uw zakelijke behoeften.',
+  quick_links: 'Snelle Links',
+  connect_with_us: 'Verbind Met Ons',
+  all_rights_reserved: 'Alle rechten voorbehouden.',
+  something_went_wrong: 'Er is iets misgegaan. Probeer het opnieuw.'
 }

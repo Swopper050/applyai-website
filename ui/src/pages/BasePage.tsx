@@ -1,7 +1,7 @@
-import { JSXElement } from 'solid-js'
+import { createEffect, JSXElement } from 'solid-js'
 
 import { TopBar } from '../components/TopBar'
-import { useLocale } from '../context/LocaleProvider'
+import Footer from '../components/Footer'
 
 interface BasePageProps {
   children?: JSXElement
@@ -9,17 +9,21 @@ interface BasePageProps {
 }
 
 export function BasePage(props: BasePageProps): JSXElement {
-  const { t } = useLocale()
-  document.title = props.title ? `${props.title} | ApplyAI` : 'ApplyAI'
-
+  createEffect(() => {
+    document.title = props.title ? `${props.title} | ApplyAI` : 'ApplyAI'
+  })
+  
   return (
     <div class="flex flex-col min-h-screen">
       <TopBar />
-      <div class="flex-1 pt-16 px-4">
-        <main class="container mx-auto py-8">
+
+      <div class="flex-1 pt-16">
+        <main>
           {props.children}
         </main>
       </div>
+      
+      <Footer />
     </div>
   )
 }

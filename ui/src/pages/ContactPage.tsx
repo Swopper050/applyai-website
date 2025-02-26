@@ -26,12 +26,16 @@ export function ContactPage(): JSXElement {
   const [contactForm, Contact] = createForm<ContactFormData>()
 
   const onSubmit: SubmitHandler<ContactFormData> = async (values) => {
-    const response = await submitContactForm(values.name, values.email, values.message)
+    const response = await submitContactForm({
+      name: values.name,
+      email: values.email,
+      message: values.message
+    })
 
     if (response.status !== 200) {
       setResponse(contactForm, {
         status: 'error',
-        message: (await response.json()).error || 'Error submitting form',
+        message: (await response.json()).error || t('something_went_wrong'),
       })
       return
     }

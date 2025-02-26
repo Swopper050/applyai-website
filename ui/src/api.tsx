@@ -83,11 +83,11 @@ export async function resendVerificationMail() {
   return post('api/resend_email_verification', {})
 }
 
-export async function submitContactForm(name: string, email: string, message: string) {
+export async function submitContactForm(form: { name: string, email: string, message: string }) {
   return post('api/contact', {
-    name: name,
-    email: email,
-    message: message,
+    name: form.name,
+    email: form.email,
+    message: form.message,
   })
 }
 

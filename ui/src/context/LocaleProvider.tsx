@@ -10,13 +10,16 @@ import {
 
 import * as i18n from '@solid-primitives/i18n'
 
-import type * as en from '../locales/en'
-import { dict as defaultDict } from '../locales/en'
+import type * as nl from '../locales/nl'
+import { dict as nlDict } from '../locales/nl'
 
-export const locales = ['en', 'nl'] as const
+export const locales = ['nl', 'en'] as const
 export type Locale = (typeof locales)[number]
-export type TranslationKeys = typeof en.dict
+export type TranslationKeys = typeof nl.dict
 export type Translations = i18n.Flatten<TranslationKeys>
+
+// Now nlDict is the default
+const defaultDict = nlDict
 
 export async function fetchDictionary(locale: Locale): Promise<Translations> {
   const dict: Translations = (await import(`../locales/${locale}.ts`)).dict
@@ -34,11 +37,11 @@ const LocaleContext = createContext<LocaleContextType>()
 
 export function LocaleProvider(props: { children: JSXElement }) {
   const [locale, setLocale] = createSignal<Locale>(
-    (localStorage.getItem('locale') as Locale) ?? 'en'
+    (localStorage.getItem('locale') as Locale) ?? 'nl'
   )
 
   const [translations, { mutate }] = createResource(locale, async (locale) => {
-    if (locale === 'en') return defaultDict
+    if (locale === 'nl') return defaultDict
     return await fetchDictionary(locale)
   })
 
@@ -48,7 +51,7 @@ export function LocaleProvider(props: { children: JSXElement }) {
     setLocale(newLocale)
     localStorage.setItem('locale', newLocale)
 
-    if (newLocale !== 'en') {
+    if (newLocale !== 'nl') {
       mutate(defaultDict)
     }
   }

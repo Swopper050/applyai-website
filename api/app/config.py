@@ -6,8 +6,6 @@ APPLYAI_DB_PASSWORD = os.environ.get("APPLYAI_DB_PASSWORD", "applyai_password")
 APPLYAI_DB_HOST = os.environ.get("APPLYAI_DB_HOST", "127.0.0.1")
 APPLYAI_DB_PORT = os.environ.get("APPLYAI_DB_PORT", "3306")
 
-APPLYAI_FRONTEND_URL = os.environ.get("APPLYAI_FRONTEND_URL", "http://localhost:5173")
-
 
 APPLYAI_FERNET_SECRET_KEY = os.environ.get(
     "APPLYAI_FERNET_SECRET_KEY", "kxmkv6vw7AMDx92BH9JSEZ7_PQqPyYsWZBAGzP0kXys="

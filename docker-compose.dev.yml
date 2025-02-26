@@ -14,7 +14,7 @@ services:
     image: maildev/maildev
     container_name: applyai-maildev
     command: 
-      - "--incoming-user=applyai@mail.com"
+      - "--incoming-user=info@applyai.nl"
       - "--incoming-pass=12345678"
     ports:
       - "1080:1080" 
