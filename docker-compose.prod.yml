@@ -1,0 +1,75 @@
+services:
+  ui:
+    image: $DOCKERHUB_NAMESPACE/applyai-ui:latest
+    container_name: applyai-ui
+    volumes:
+      - '/etc/letsencrypt/:/etc/letsencrypt/'
+    ports:
+      - '80:80'
+      - '443:443'
+    networks:
+      - applyai-network
+    depends_on:
+      - api
+    logging:
+      driver: 'json-file'
+      options:
+        max-size: '5m'
+        max-file: '10'
+
+  api:
+    image: $DOCKERHUB_NAMESPACE/applyai-api:latest
+    container_name: applyai-api
+    environment:
+      APPLYAI_DB_NAME: $APPLYAI_DB_NAME
+      APPLYAI_DB_USER: $APPLYAI_DB_USER
+      APPLYAI_DB_PASSWORD: $APPLYAI_DB_PASSWORD
+      APPLYAI_DB_HOST: 'db'
+      APPLYAI_DB_PORT: '3306'
+      APPLYAI_FRONTEND_URL: https://applyai.nl
+      APPLYAI_PASSWORD_RESET_TOKEN_EXPIRE_HOURS: 1
+      APPLYAI_SECRET_KEY: $APPLYAI_SECRET_KEY
+      APPLYAI_MAIL_SERVER: $APPLYAI_MAIL_SERVER
+      APPLYAI_MAIL_PORT: $APPLYAI_MAIL_PORT
+      APPLYAI_MAIL_USE_SSL: 'True'
+      APPLYAI_MAIL_USERNAME: $APPLYAI_MAIL_USERNAME
+      APPLYAI_MAIL_PASSWORD: $APPLYAI_MAIL_PASSWORD
+      APPLYAI_MAIL_DEFAULT_SENDER: $APPLYAI_MAIL_DEFAULT_SENDER
+      APPLYAI_FERNET_SECRET_KEY: $APPLYAI_FERNET_SECRET_KEY
+    networks:
+      - applyai-network
+    depends_on:
+      - db
+    logging:
+      driver: 'json-file'
+      options:
+        max-size: '5m'
+        max-file: '5'
+
+  db:
+    image: mariadb:latest
+    container_name: applyai-mariadb
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: $MYSQL_ROOT_PASSWORD
+      MYSQL_DATABASE: $APPLYAI_DB_NAME
+      MYSQL_USER: $APPLYAI_DB_USER
+      MYSQL_PASSWORD: $APPLYAI_DB_PASSWORD
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - applyai-network
+    logging:
+      driver: 'json-file'
+      options:
+        max-size: '5m'
+        max-file: '5'
+
+
+networks:
+  applyai-network:
+    driver: bridge
+
+
+volumes:
+  db_data:

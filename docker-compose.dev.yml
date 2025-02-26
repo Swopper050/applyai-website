@@ -1,0 +1,21 @@
+services:
+  db:
+    image: mariadb:latest
+    container_name: applyai-mariadb
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: applyai_root_password
+      MYSQL_DATABASE: applyai_db
+      MYSQL_USER: applyai_user
+      MYSQL_PASSWORD: applyai_password
+
+  mail: 
+    image: maildev/maildev
+    container_name: applyai-maildev
+    command: 
+      - "--incoming-user=applyai@mail.com"
+      - "--incoming-pass=12345678"
+    ports:
+      - "1080:1080" 
+      - "1025:1025"
