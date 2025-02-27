@@ -52,7 +52,11 @@ export function VerifyEmailPage(): JSXElement {
 
       <Show when={errorMsg() !== null}>
         <div class="flex justify-center mt-6">
-          <Alert type="error" message={errorMsg()} extraClasses="w-full max-w-md" />
+          <Alert
+            type="error"
+            message={errorMsg()}
+            extraClasses="w-full max-w-md"
+          />
         </div>
       </Show>
 

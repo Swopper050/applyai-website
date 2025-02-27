@@ -26,7 +26,11 @@ export function NotFoundPage(): JSXElement {
 
       <div class="flex justify-center mt-10">
         <figure>
-          <img src={puppy} alt="Puppy" class="max-w-full sm:max-w-md rounded-xl shadow-lg" />
+          <img
+            src={puppy}
+            alt="Puppy"
+            class="max-w-full sm:max-w-md rounded-xl shadow-lg"
+          />
         </figure>
       </div>
 

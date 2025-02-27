@@ -2,6 +2,8 @@ export const dict = {
   hello_template: (name: string) => `Hallo ${name}`,
   a_puppy: 'Een puppy!',
   account: 'Account',
+  applyai: 'ApplyAI',
+  all_rights_reserved: 'Alle rechten voorbehouden.',
   are_you_sure_you_want_to_delete_your_account:
     'Weet je zeker dat je je account wilt verwijderen?',
   back_to_home: 'Terug naar home',
@@ -11,6 +13,9 @@ export const dict = {
   confirm_new_password: 'Herhaal nieuw wachtwoord',
   confirm_password: 'Bevestig wachtwoord',
   contact: 'Contact',
+  contact_form_submitted_successfully:
+    'Bedankt voor uw bericht! We nemen binnen 2 werkdagen contact met u op.',
+  contact_us: 'Neem contact met ons op',
   could_not_log_out_please_try_again_later:
     'Kon niet uitloggen, probeer het later opnieuw',
   current_password: 'Huidig wachtwoord',
@@ -25,28 +30,29 @@ export const dict = {
   enabling: 'Inschakelen',
   enter_the_6_digit_code_generated_by_your_authenticator_app:
     'Voer de 6-cijferige code in die is gegenereerd door je authenticator-app',
+  enter_your_message: 'Voer hier uw bericht in...',
+  phone_placeholder: 'Telefoonnummer (optioneel)',
+  please_enter_only_numbers: 'Voer alleen cijfers in',
   forgot_password: 'Wachtwoord vergeten?',
-  groningse_ai_local_honest_independent: "AI op z'n Gronings: lokaal, transparant en onafhankelijk",
+  groningse_ai_local_honest_independent:
+    "AI op z'n Gronings: lokaal, transparant en onafhankelijk",
   here_is_a_picture_of_a: 'Hier is een foto van een ',
   home: 'Home',
   if_a_user_with_this_email_exists_a_reset_password_mail_has_been_sent:
     'Als een gebruiker met dit e-mailadres bestaat, is er een e-mail voor het opnieuw instellen van het wachtwoord verzonden',
   learn_more: 'Meer informatie',
-  learn_more_p1:
-    `We leven in een wereld waarin Artificial Intelligence (AI) ongekende nieuwe mogelijkheden,
+  learn_more_p1: `We leven in een wereld waarin Artificial Intelligence (AI) ongekende nieuwe mogelijkheden,
     maar ook onzekerheid en soms angst met zich meebrengt. Wat moeten we met deze technologie?
     Hoe zorgen je goed voor mensen en voor de aarde, maar benutten je wel de beste technologie van deze tijd?
     Hoe bereid je je bedrijf of medewerkers voor op veranderingen die er gaan komen?
     Welke kansen liggen er voor jouw bedrijf? En welke kansen zeg je bewust nee tegen?
     En als alles in handen is van de grootste techbedrijven ter wereld, wat betekent dat dan?`,
-  learn_more_p2: 
-    `Wij helpen jou om de volgende stap te zetten in de wereld van AI, een stap die past bij jouw bedrijf en jouw waarden.
+  learn_more_p2: `Wij helpen jou om de volgende stap te zetten in de wereld van AI, een stap die past bij jouw bedrijf en jouw waarden.
     Neem contact op voor een volledig gratis en vrijblijvend gesprek.`,
   login: 'Login',
   logout: 'Logout',
-  applyai: 'ApplyAI',
-  make_your_next_step:
-    'Begin nu met leren wat AI voor je kan betekenen',
+  make_your_next_step: 'Begin nu met leren wat AI voor je kan betekenen',
+  name: 'Naam',
   new_password: 'Nieuw wachtwoord',
   no: 'Nee',
   password: 'Wachtwoord',
@@ -56,7 +62,10 @@ export const dict = {
   please_enter_a_new_password: 'Voer een nieuw wachtwoord in',
   please_enter_a_valid_email: 'Voer een geldig e-mailadres in',
   please_enter_a_valid_6_digit_code: 'Voer een geldige 6-cijferige code in',
+  please_enter_at_least_10_characters: 'Voer minimaal 10 tekens in',
   please_enter_your_email: 'Voer je e-mailadres in',
+  please_enter_your_message: 'Voer alstublieft uw bericht in',
+  please_enter_your_name: 'Voer alstublieft uw naam in',
   preikestolen: 'Preikestolen',
   products_and_services: 'Producten en Diensten',
   puppy: 'puppy',
@@ -67,8 +76,11 @@ export const dict = {
   resetting: 'Opnieuw aan het instellen',
   saving: 'Opslaan',
   send_reset_email: 'Stuur e-mail voor wachtwoord reset',
+  send: 'Verstuur',
   sending: 'Verzenden',
+  close: 'Sluiten',
   someone_might_like_it: 'Iemand vindt het misschien leuk!',
+  something_went_wrong: 'Er is iets misgegaan. Probeer het opnieuw.',
   step_1_scan_qr_code_with_your_authenticator_app:
     'Stap 1: Scan de QR-code met je authenticator-app',
   step_2_verify_the_setup_by_filling_in_the_2fa_code:
@@ -98,46 +110,15 @@ export const dict = {
     'Je wachtwoord moet 1 hoofdletter bevatten',
   your_password_must_have_8_characters_or_more:
     'Je wachtwoord moet 8 tekens of meer bevatten',
-    
-  // New landing page translations
-  slogan: 'Bedrijven transformeren met intelligente automatisering',
-  our_products: 'Onze Producten',
-  our_services: 'Onze Diensten',
+
+  what_we_do: 'Wat we doen',
   product_ai_automation: 'AI Automatisering',
-  product_ai_automation_desc: 'Stroomlijn je workflows met onze geavanceerde AI-automatiseringstools',
+  product_ai_automation_desc:
+    'Stroomlijn je workflows met onze geavanceerde AI-automatiseringstools',
   product_data_analytics: 'Data Analyse',
-  product_data_analytics_desc: 'Zet je gegevens om in bruikbare inzichten met ons analyseplatform',
+  product_data_analytics_desc:
+    'Zet je gegevens om in bruikbare inzichten met ons analyseplatform',
   product_custom_solutions: 'Op maat gemaakte oplossingen',
-  product_custom_solutions_desc: 'Op maat gemaakte AI-oplossingen voor jouw specifieke bedrijfsbehoeften',
-  service_consulting: 'AI Consulting',
-  service_consulting_desc: 'Deskundige begeleiding bij het implementeren van AI in je organisatie',
-  service_implementation: 'Implementatie',
-  service_implementation_desc: 'End-to-end implementatie van AI-oplossingen voor je bedrijf',
-  service_training: 'Training & Ondersteuning',
-  service_training_desc: 'Uitgebreide training en doorlopende ondersteuning voor je team',
-  reference_company1: 'Acme Corp',
-  reference_company2: 'TechGlobal',
-  reference_company3: 'Innovate Inc',
-  reference_company4: 'Future Systems',
-  place_your_image_here: 'Plaats hier uw afbeelding',
-  
-  // Contact form
-  contact_us: 'Neem Contact Op',
-  contact_page_description: 'Heeft u een vraag of wilt u meer weten over onze diensten? Vul het onderstaande formulier in en we nemen zo snel mogelijk contact met u op.',
-  your_name: 'Uw naam',
-  name: 'Naam',
-  message: 'Bericht',
-  enter_your_message: 'Voer hier uw bericht in...',
-  send_message: 'Verstuur Bericht',
-  please_enter_your_name: 'Voer alstublieft uw naam in',
-  please_enter_your_message: 'Voer alstublieft uw bericht in',
-  please_enter_at_least_10_characters: 'Voer minimaal 10 tekens in',
-  contact_form_submitted_successfully: 'Bedankt voor uw bericht! We nemen snel contact met u op.',
-  
-  // Footer
-  footer_description: 'Lokale AI-oplossingen uit Groningen. Ethisch, transparant en afgestemd op uw zakelijke behoeften.',
-  quick_links: 'Snelle Links',
-  connect_with_us: 'Verbind Met Ons',
-  all_rights_reserved: 'Alle rechten voorbehouden.',
-  something_went_wrong: 'Er is iets misgegaan. Probeer het opnieuw.'
+  product_custom_solutions_desc:
+    'Op maat gemaakte AI-oplossingen voor jouw specifieke bedrijfsbehoeften',
 }

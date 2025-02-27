@@ -29,7 +29,7 @@ export function ContactPage(): JSXElement {
     const response = await submitContactForm({
       name: values.name,
       email: values.email,
-      message: values.message
+      message: values.message,
     })
 
     if (response.status !== 200) {
@@ -40,9 +40,9 @@ export function ContactPage(): JSXElement {
       return
     }
 
-    setResponse(contactForm, { 
-      status: 'success', 
-      message: t('contact_form_submitted_successfully') 
+    setResponse(contactForm, {
+      status: 'success',
+      message: t('contact_form_submitted_successfully'),
     })
     reset(contactForm)
   }
@@ -58,9 +58,7 @@ export function ContactPage(): JSXElement {
             <Contact.Form onSubmit={onSubmit}>
               <Contact.Field
                 name="name"
-                validate={[
-                  required(t('please_enter_your_name')),
-                ]}
+                validate={[required(t('please_enter_your_name'))]}
               >
                 {(field, props) => (
                   <TextInput
@@ -118,7 +116,11 @@ export function ContactPage(): JSXElement {
                       aria-errormessage="message-error"
                       placeholder={t('enter_your_message')}
                     />
-                    {field.error && <div id="message-error" class="text-error text-sm mt-1">{field.error}</div>}
+                    {field.error && (
+                      <div id="message-error" class="text-error text-sm mt-1">
+                        {field.error}
+                      </div>
+                    )}
                   </div>
                 )}
               </Contact.Field>

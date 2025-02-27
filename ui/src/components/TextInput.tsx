@@ -38,7 +38,11 @@ export function TextInput(props: TextInputProps) {
           aria-errormessage={`${props.name}-error`}
         />
       </label>
-      {props.error && <div id={`${props.name}-error`}>{props.error}</div>}
+      {props.error && (
+        <div id={`${props.name}-error`} class="text-error">
+          {props.error}
+        </div>
+      )}
     </div>
   )
 }

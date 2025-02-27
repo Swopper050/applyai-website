@@ -6,12 +6,16 @@ from flask_mail import Message
 from app.extensions import mail
 
 
-def send_contact_confirmation_email(*, name: str, email: str, message: str):
+def send_contact_confirmation_email(
+    *, name: str, email: str, phone: str = "", message: str
+):
     """Send a confirmation email to the person who submitted the contact form."""
     with open("./email_templates/contact_confirmation.html", "r") as file:
         html_content = file.read()
 
-    html_content = Template(html_content).safe_substitute(name=name, message=message)
+    html_content = Template(html_content).safe_substitute(
+        name=name, phone=phone, message=message
+    )
 
     email_message = Message(
         subject="🛁 ApplyAI - Thank you for your message",
@@ -22,7 +26,9 @@ def send_contact_confirmation_email(*, name: str, email: str, message: str):
     mail.send(email_message)
 
 
-def send_contact_notification_email(*, name: str, email: str, message: str):
+def send_contact_notification_email(
+    *, name: str, email: str, phone: str = "", message: str
+):
     """Send a notification email to the business about a new contact form submission."""
     current_date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
@@ -30,7 +36,7 @@ def send_contact_notification_email(*, name: str, email: str, message: str):
         html_content = file.read()
 
     html_content = Template(html_content).safe_substitute(
-        name=name, email=email, message=message, date=current_date
+        name=name, email=email, phone=phone, message=message, date=current_date
     )
 
     email_message = Message(

@@ -18,6 +18,7 @@ class Contact(Resource):
 
         name = data.get("name")
         email = data.get("email")
+        phone = data.get("phone", "")  # Optional
         message = data.get("message")
 
         if not name:
@@ -28,8 +29,12 @@ class Contact(Resource):
             return {"error": "Message is required"}, 400
 
         try:
-            send_contact_confirmation_email(name=name, email=email, message=message)
-            send_contact_notification_email(name=name, email=email, message=message)
+            send_contact_confirmation_email(
+                name=name, email=email, phone=phone, message=message
+            )
+            send_contact_notification_email(
+                name=name, email=email, phone=phone, message=message
+            )
 
             return {"result": "Your message has been sent successfully"}, 200
 

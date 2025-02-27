@@ -1,8 +1,8 @@
-import { JSXElement } from "solid-js";
-import { clsx } from 'clsx';
+import { JSXElement } from 'solid-js'
+import { clsx } from 'clsx'
 
 interface LoadingProps {
-  extraClasses?: string;
+  extraClasses?: string
 }
 
 export function Loading(props: LoadingProps): JSXElement {
@@ -11,8 +11,8 @@ export function Loading(props: LoadingProps): JSXElement {
       <img
         src="/loading_applyai.gif"
         alt="Loading..."
-        class={clsx(props.extraClasses ? props.extraClasses : "h-64")}
+        class={clsx(props.extraClasses ? props.extraClasses : 'h-64')}
       />
     </div>
-  );
-};
+  )
+}
