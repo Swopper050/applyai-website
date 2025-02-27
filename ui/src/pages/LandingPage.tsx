@@ -58,7 +58,7 @@ export function LandingPage(): JSXElement {
 
             <button
               onClick={() => setContactModalOpen(true)}
-              class="btn btn-btn-outline btn-lg"
+              class="btn btn-btn-outline btn-lg mb-4"
             >
               {t('contact')}
             </button>
@@ -77,14 +77,17 @@ export function LandingPage(): JSXElement {
         <h2 class="text-3xl font-bold text-center mb-12">{t('what_we_do')}</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div class="card border shadow-md hover:border-primary hover:shadow-lg transition-all">
+            <figure>
+              <img
+                src="/management_days.jpg"
+                alt="Shoes"
+              />
+            </figure>
             <div class="card-body">
-              <div class="bg-primary w-16 h-16 rounded-full flex items-center justify-center mb-4">
-                <i class="fa-solid fa-robot text-white text-2xl" />
-              </div>
-              <h3 class="card-title text-xl">{t('product_ai_automation')}</h3>
-              <p>{t('product_ai_automation_desc')}</p>
+              <h3 class="card-title text-xl">{t('management_days')}</h3>
+              <p>{t('management_days_description')}</p>
               <div class="card-actions justify-end mt-4">
-                <A href="/products" class="btn btn-sm btn-primary">
+                <A href="/what-we-do/management-days" class="btn btn-md btn-primary">
                   {t('learn_more')}
                 </A>
               </div>
@@ -99,7 +102,7 @@ export function LandingPage(): JSXElement {
               <h3 class="card-title text-xl">{t('product_data_analytics')}</h3>
               <p>{t('product_data_analytics_desc')}</p>
               <div class="card-actions justify-end mt-4">
-                <A href="/products" class="btn btn-sm btn-primary">
+                <A href="/products" class="btn btn-md btn-primary">
                   {t('learn_more')}
                 </A>
               </div>
@@ -116,7 +119,7 @@ export function LandingPage(): JSXElement {
               </h3>
               <p>{t('product_custom_solutions_desc')}</p>
               <div class="card-actions justify-end mt-4">
-                <A href="/products" class="btn btn-sm btn-primary">
+                <A href="/products" class="btn btn-md btn-primary">
                   {t('learn_more')}
                 </A>
               </div>

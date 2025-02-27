@@ -56,6 +56,7 @@ export const dict = {
   logout: 'Logout',
   make_your_next_step: 'Begin nu met leren wat AI voor je kan betekenen',
   management_days: 'Managementdagen',
+  management_days_description: 'Jouw bedrijf, jouw AI-strategie. Wij helpen je de juiste keuzes te maken.',
   name: 'Naam',
   new_password: 'Nieuw wachtwoord',
   no: 'Nee',

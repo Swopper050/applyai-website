@@ -1,7 +1,7 @@
-import { Component } from 'solid-js'
+import { JSXElement } from 'solid-js'
 import { useLocale } from '../context/LocaleProvider'
 
-const Footer: Component = () => {
+export function Footer(): JSXElement {
   const { t } = useLocale()
 
   return (
@@ -53,13 +53,13 @@ const Footer: Component = () => {
                 <i class="fa-brands fa-github" />
               </a>
               <a
-                href="https://linkedin.com/in/applyai"
+                href="https://www.linkedin.com/in/bram-de-wit-6681b0227/"
                 class="text-2xl"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
               >
-                <i class="fa-brands fa-linkedin" />
+                <i class="fa-brands fa-linkedin text-primary" />
               </a>
             </div>
           </div>
@@ -68,5 +68,3 @@ const Footer: Component = () => {
     </footer>
   )
 }
-
-export default Footer

@@ -1,7 +1,7 @@
 import { createEffect, JSXElement } from 'solid-js'
 
 import { TopBar } from '../components/TopBar'
-import Footer from '../components/Footer'
+import { Footer } from '../components/Footer'
 
 interface BasePageProps {
   children?: JSXElement
