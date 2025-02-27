@@ -10,7 +10,7 @@ export function NotFoundPage(): JSXElement {
 
   return (
     <BasePage title="Page Not Found">
-      <div class="flex justify-center items-center">
+      <div class="flex justify-center items-center mt-32">
         <h1 class="text-4xl text-center font-bold">
           {t('woops_this_page_does_not_exist')}
         </h1>

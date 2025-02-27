@@ -1,4 +1,4 @@
-import { JSXElement } from 'solid-js'
+import { createSignal, JSXElement } from 'solid-js'
 import { A } from '@solidjs/router'
 import { BasePage } from './BasePage'
 import { useLocale } from '../context/LocaleProvider'
@@ -6,6 +6,8 @@ import { ContactModal } from '../components/ContactModal'
 
 export function LandingPage(): JSXElement {
   const { t } = useLocale()
+
+  const [contactModalOpen, setContactModalOpen] = createSignal(false)
 
   const scrollToProducts = () => {
     document.getElementById('learn-more-section')?.scrollIntoView({
@@ -37,7 +39,12 @@ export function LandingPage(): JSXElement {
               <i class="fa-solid fa-chevron-down" />
             </button>
 
-            <ContactModal buttonClass="btn btn-outline btn-lg" />
+            <button
+              onClick={() => setContactModalOpen(true)}
+              class="btn btn-btn-outline btn-lg"
+            >
+              {t('contact')}
+            </button>
           </div>
         </div>
       </div>
@@ -49,7 +56,12 @@ export function LandingPage(): JSXElement {
             <p class="text-lg mb-4">{t('learn_more_p1')}</p>
             <p class="text-lg mb-4">{t('learn_more_p2')}</p>
 
-            <ContactModal buttonClass="btn btn-outline btn-lg" />
+            <button
+              onClick={() => setContactModalOpen(true)}
+              class="btn btn-btn-outline btn-lg"
+            >
+              {t('contact')}
+            </button>
           </div>
           <div class="flex justify-center mt-10">
             <img
@@ -112,6 +124,11 @@ export function LandingPage(): JSXElement {
           </div>
         </div>
       </div>
+
+      <ContactModal
+        isOpen={contactModalOpen()}
+        onClose={() => setContactModalOpen(false)}
+      />
     </BasePage>
   )
 }
