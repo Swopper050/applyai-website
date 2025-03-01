@@ -77,16 +77,16 @@ export function LandingPage(): JSXElement {
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div class="card border shadow-md hover:border-primary hover:shadow-lg transition-all">
             <figure>
-              <img
-                src="/groningen.jpg"
-                alt="Shoes"
-              />
+              <img src="/groningen.jpg" alt="Shoes" />
             </figure>
             <div class="card-body">
               <h3 class="card-title text-xl">{t('tailored_ai')}</h3>
               <p>{t('tailored_ai_description')}</p>
               <div class="card-actions justify-end mt-4">
-                <A href="/what-we-do/tailored-ai" class="btn btn-md btn-primary">
+                <A
+                  href="/what-we-do/tailored-ai"
+                  class="btn btn-md btn-primary"
+                >
                   {t('learn_more')}
                 </A>
               </div>
@@ -95,16 +95,16 @@ export function LandingPage(): JSXElement {
 
           <div class="card border shadow-md hover:border-primary hover:shadow-lg transition-all">
             <figure>
-              <img
-                src="/management_days.jpg"
-                alt="Shoes"
-              />
+              <img src="/management_days.jpg" alt="Shoes" />
             </figure>
             <div class="card-body">
               <h3 class="card-title text-xl">{t('management_days')}</h3>
               <p>{t('management_days_description')}</p>
               <div class="card-actions justify-end mt-4">
-                <A href="/what-we-do/management-days" class="btn btn-md btn-primary">
+                <A
+                  href="/what-we-do/management-days"
+                  class="btn btn-md btn-primary"
+                >
                   {t('learn_more')}
                 </A>
               </div>
@@ -113,16 +113,16 @@ export function LandingPage(): JSXElement {
 
           <div class="card border shadow-md hover:border-primary hover:shadow-lg transition-all">
             <figure>
-              <img
-                src="/groningen.jpg"
-                alt="Shoes"
-              />
+              <img src="/groningen.jpg" alt="Shoes" />
             </figure>
             <div class="card-body">
               <h3 class="card-title text-xl">{t('structured_data')}</h3>
               <p>{t('structured_data_description')}</p>
               <div class="card-actions justify-end mt-4">
-                <A href="/what-we-do/structured_data" class="btn btn-md btn-primary">
+                <A
+                  href="/what-we-do/structured_data"
+                  class="btn btn-md btn-primary"
+                >
                   {t('learn_more')}
                 </A>
               </div>

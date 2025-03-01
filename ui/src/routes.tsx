@@ -37,9 +37,7 @@ export const routes: RouteDefinition[] = [
   },
   {
     path: '/what-we-do/management-days',
-    component: () => (
-      <ManagementDaysPage />
-    ),
+    component: () => <ManagementDaysPage />,
   },
   {
     path: '/contact',
