@@ -7,7 +7,7 @@ import { useUser } from './context/UserProvider'
 import { LandingPage } from './pages/LandingPage'
 import { VerifyEmailPage } from './pages/VerifyEmailPage'
 import { NotFoundPage } from './pages/NotFoundPage'
-import { BasePage } from './pages/BasePage'
+import { ManagementDaysPage } from './pages/ManagementDaysPage'
 import { ContactPage } from './pages/ContactPage'
 
 export function ProtectedRoute(props: { route: () => JSXElement }): JSXElement {
@@ -36,13 +36,9 @@ export const routes: RouteDefinition[] = [
     component: () => <LandingPage />,
   },
   {
-    path: '/products',
+    path: '/what-we-do/management-days',
     component: () => (
-      <BasePage title="Products and Services">
-        <div class="flex justify-center items-center min-h-[50vh]">
-          <h1 class="text-2xl font-bold">Products and Services</h1>
-        </div>
-      </BasePage>
+      <ManagementDaysPage />
     ),
   },
   {

@@ -36,7 +36,6 @@ export function LandingPage(): JSXElement {
           <div class="flex flex-col sm:flex-row gap-6 justify-center">
             <button class="btn btn-primary btn-lg" onClick={scrollToProducts}>
               {t('learn_more')}
-              <i class="fa-solid fa-chevron-down" />
             </button>
 
             <button
@@ -79,6 +78,24 @@ export function LandingPage(): JSXElement {
           <div class="card border shadow-md hover:border-primary hover:shadow-lg transition-all">
             <figure>
               <img
+                src="/groningen.jpg"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body">
+              <h3 class="card-title text-xl">{t('tailored_ai')}</h3>
+              <p>{t('tailored_ai_description')}</p>
+              <div class="card-actions justify-end mt-4">
+                <A href="/what-we-do/tailored-ai" class="btn btn-md btn-primary">
+                  {t('learn_more')}
+                </A>
+              </div>
+            </div>
+          </div>
+
+          <div class="card border shadow-md hover:border-primary hover:shadow-lg transition-all">
+            <figure>
+              <img
                 src="/management_days.jpg"
                 alt="Shoes"
               />
@@ -95,31 +112,17 @@ export function LandingPage(): JSXElement {
           </div>
 
           <div class="card border shadow-md hover:border-primary hover:shadow-lg transition-all">
+            <figure>
+              <img
+                src="/groningen.jpg"
+                alt="Shoes"
+              />
+            </figure>
             <div class="card-body">
-              <div class="bg-primary w-16 h-16 rounded-full flex items-center justify-center mb-4">
-                <i class="fa-solid fa-chart-line text-white text-2xl" />
-              </div>
-              <h3 class="card-title text-xl">{t('product_data_analytics')}</h3>
-              <p>{t('product_data_analytics_desc')}</p>
+              <h3 class="card-title text-xl">{t('structured_data')}</h3>
+              <p>{t('structured_data_description')}</p>
               <div class="card-actions justify-end mt-4">
-                <A href="/products" class="btn btn-md btn-primary">
-                  {t('learn_more')}
-                </A>
-              </div>
-            </div>
-          </div>
-
-          <div class="card border shadow-md hover:border-primary hover:shadow-lg transition-all">
-            <div class="card-body">
-              <div class="bg-primary w-16 h-16 rounded-full flex items-center justify-center mb-4">
-                <i class="fa-solid fa-gear text-white text-2xl" />
-              </div>
-              <h3 class="card-title text-xl">
-                {t('product_custom_solutions')}
-              </h3>
-              <p>{t('product_custom_solutions_desc')}</p>
-              <div class="card-actions justify-end mt-4">
-                <A href="/products" class="btn btn-md btn-primary">
+                <A href="/what-we-do/structured_data" class="btn btn-md btn-primary">
                   {t('learn_more')}
                 </A>
               </div>

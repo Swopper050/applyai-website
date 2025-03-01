@@ -13,10 +13,10 @@ export function TopBar(): JSXElement {
 
   return (
     <>
-      <div class="navbar fixed bg-base-100 border-b border-primary">
+      <div class="navbar fixed bg-base-100 border-b border-primary h-24">
         <div class="navbar-start">
-          <A class="btn btn-ghost text-2xl text-primary font-bold" href="">
-            <img src="/applyai_logo.png" alt="ApplyAI Logo" class="h-8 mr-2" />
+          <A class="btn btn-ghost text-4xl text-primary font-bold" href="">
+            <img src="/applyai_logo.png" alt="ApplyAI Logo" class="h-12 mr-2" />
             ApplyAI
           </A>
         </div>
@@ -31,7 +31,16 @@ export function TopBar(): JSXElement {
             <li>
               <details class="text-lg font-medium">
                 <summary>{t('what_we_do')}</summary>
-                <ul class="p-2">
+                <ul class="p-2 w-96">
+                  <li>
+                    <A
+                      href="/what-we-do/tailored-ai"
+                      activeClass="font-bold"
+                      end
+                    >
+                      {t('tailored_ai')}
+                    </A>
+                  </li>
                   <li>
                     <A
                       href="/what-we-do/management-days"
@@ -39,6 +48,15 @@ export function TopBar(): JSXElement {
                       end
                     >
                       {t('management_days')}
+                    </A>
+                  </li>
+                  <li>
+                    <A
+                      href="/what-we-do/structered-data"
+                      activeClass="font-bold"
+                      end
+                    >
+                      {t('structured_data_menu')}
                     </A>
                   </li>
                 </ul>

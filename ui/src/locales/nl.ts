@@ -46,10 +46,9 @@ export const dict = {
   learn_more: 'Meer informatie',
   learn_more_p1: `We leven in een wereld waarin Artificial Intelligence (AI) ongekende nieuwe mogelijkheden,
     maar ook onzekerheid en soms angst met zich meebrengt. Wat moeten we met deze technologie?
-    Hoe zorgen je goed voor mensen en voor de aarde, maar benutten je wel de beste technologie van deze tijd?
+    Hoe zorg je goed voor mensen en voor de aarde, maar benut je wel de beste technologie van deze tijd?
     Hoe bereid je je bedrijf of medewerkers voor op veranderingen die er gaan komen?
-    Welke kansen liggen er voor jouw bedrijf? En welke kansen zeg je bewust nee tegen?
-    En als alles in handen is van de grootste techbedrijven ter wereld, wat betekent dat dan?`,
+    Welke kansen liggen er voor jouw bedrijf? En welke kansen zeg je bewust nee tegen?`,
   learn_more_p2: `Wij helpen jou om de volgende stap te zetten in de wereld van AI, een stap die past bij jouw bedrijf en jouw waarden.
     Neem contact op voor een volledig gratis en vrijblijvend gesprek.`,
   login: 'Login',
@@ -57,6 +56,23 @@ export const dict = {
   make_your_next_step: 'Begin nu met leren wat AI voor je kan betekenen',
   management_days: 'Managementdagen',
   management_days_description: 'Jouw bedrijf, jouw AI-strategie. Wij helpen je de juiste keuzes te maken.',
+  management_days_p1:
+    `AI verandert de wereld in hoog tempo. Maar hoe bepaal je welke rol AI in jouw organisatie moet spelen?
+    Waar liggen de kansen, en welke ontwikkelingen laat je bewust aan je voorbijgaan? Tijdens onze managementdagen
+    helpen we je om een strategische visie te vormen en een concreet plan van aanpak te ontwikkelen, zodat je grip krijgt op AI in jouw bedrijf.`,
+  management_days_p2:
+    `De dag start met twee interactieve theorie-sessies, waarbij je zelf kiest wat voor jouw organisatie
+    het meest relevant is. Wil je een technische deep-dive om beter te begrijpen hoe AI werkt? Of juist 
+    inzicht in de nieuwste tools, wet- en regelgeving, of de impact op data en privacy? Met up-to-date 
+    kennis en heldere uitleg krijg je een stevige basis om doordachte keuzes te maken.`,
+  management_days_p3:
+    `In de middag vertalen we die kennis naar jouw bedrijf. Wat betekent AI voor jouw strategie? Hoe benut 
+    je kansen zonder je afhankelijk te maken van grote techspelers? Samen werken we aan een plan voor de komende
+    maanden, afgestemd op jouw doelen en waarden.`,
+  management_days_p4:
+    `Wij geloven dat je dit soort keuzes het beste maakt met een helder hoofd en frisse lucht. Daarom organiseren we onze managementdagen op de Enne Jans Heerd,
+    vlak boven Winsum. Midden in het Groningse landschap, ver weg van de dagelijkse drukte, kun je met je team in alle rust nadenken over de rol 
+    van AI in jouw bedrijf.`,
   name: 'Naam',
   new_password: 'Nieuw wachtwoord',
   no: 'Nee',
@@ -90,8 +106,16 @@ export const dict = {
     'Stap 1: Scan de QR-code met je authenticator-app',
   step_2_verify_the_setup_by_filling_in_the_2fa_code:
     'Stap 2: Bevestig door de 2FA-code in te vullen',
+  structured_data: 'Structuur in je data, overzicht in je bedrijf',
+  structured_data_menu: 'Opzetten data-infrastructuur',
+  structured_data_description: 
+    `Een goed ingerichte data-omgeving helpt je sneller en beter beslissingen te nemen. 
+    Wij helpen je bij het opzetten van een schaalbare data-infrastructuur, van rouwe data
+    tot duidelijke dashboards. Plus, dit maakt je toekomstbestendig met de opkomst van AI.`,
   successfully_reset_password: 'Wachtwoord succesvol opnieuw ingesteld',
   successfully_verified_email: 'E-mail succesvol geverifieerd',
+  tailored_ai: 'AI op maat',
+  tailored_ai_description: 'AI ontwikkelt in Groningen voor jou. Jij bedenkt, wij bouwen.',
   this_action_cannot_be_undone: 'Deze actie kan niet ongedaan worden gemaakt',
   this_is: 'Dit is ',
   this_is_the_home_page: 'Dit is de home pagina',
