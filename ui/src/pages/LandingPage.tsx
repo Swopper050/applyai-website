@@ -85,6 +85,7 @@ export function LandingPage(): JSXElement {
         <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8 md:mb-12">
           {t('what_we_do')}
         </h2>
+
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           <div class="card border shadow-md hover:border-primary hover:shadow-lg transition-all">
             <figure>
@@ -94,6 +95,7 @@ export function LandingPage(): JSXElement {
                 class="w-full h-48 object-cover"
               />
             </figure>
+
             <div class="card-body">
               <h3 class="card-title text-xl">{t('tailored_ai')}</h3>
               <p>{t('tailored_ai_description')}</p>
@@ -116,6 +118,7 @@ export function LandingPage(): JSXElement {
                 class="w-full h-48 object-cover"
               />
             </figure>
+
             <div class="card-body">
               <h3 class="card-title text-xl">{t('management_days')}</h3>
               <p>{t('management_days_description')}</p>
@@ -138,6 +141,7 @@ export function LandingPage(): JSXElement {
                 class="w-full h-48 object-cover"
               />
             </figure>
+
             <div class="card-body">
               <h3 class="card-title text-xl">{t('structured_data')}</h3>
               <p>{t('structured_data_description')}</p>
