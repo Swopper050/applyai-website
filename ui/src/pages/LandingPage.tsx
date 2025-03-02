@@ -17,7 +17,6 @@ export function LandingPage(): JSXElement {
 
   return (
     <BasePage title="Home">
-      {/* Hero Section */}
       <div class="flex justify-center items-center min-h-[90vh] px-4 sm:px-6 md:px-8">
         <div class="w-full max-w-6xl">
           <div class="flex flex-col sm:flex-row justify-center items-center mb-8 gap-4">
@@ -53,7 +52,6 @@ export function LandingPage(): JSXElement {
         </div>
       </div>
 
-      {/* About Section */}
       <div
         id="learn-more-section"
         class="px-4 sm:px-6 md:px-8 max-w-7xl mx-auto mt-20 md:mt-32 pt-16 md:pt-32"
@@ -83,7 +81,6 @@ export function LandingPage(): JSXElement {
         </div>
       </div>
 
-      {/* Services Section */}
       <div class="px-4 sm:px-6 md:px-8 max-w-7xl mx-auto mt-32 md:mt-64 mb-20 md:mb-32">
         <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8 md:mb-12">
           {t('what_we_do')}
