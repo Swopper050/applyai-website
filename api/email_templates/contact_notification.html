@@ -50,35 +50,38 @@
         .footer {
             text-align: center;
             margin-top: 20px;
-            font-size: 12px;
-            color: #777;
+            font-size: 14px;
+            color: #555;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1>🛁 ApplyAI</h1>
-            <h1>New Contact Form Submission</h1>
+            <div style="display: flex; align-items: center; justify-content: center;">
+                <img src="cid:logo" alt="ApplyAI Logo" style="width: 80px; margin-right: 15px;">
+                <h1 style="margin: 0; font-size: 36px;">ApplyAI</h1>
+            </div>
+            <h2>Nieuwe inzending contactformulier</h2>
         </div>
-        <p>A new message has been submitted through the contact form:</p>
+
+        <p>Er is een nieuw bericht verzonden via het contactformulier:</p>
         
         <div class="contact-info">
-            <p><strong>Name:</strong> $name</p>
-            <p><strong>Email:</strong> $email</p>
-            <p><strong>Phone:</strong> ${phone}</p>
-            <p><strong>Date:</strong> $date</p>
+            <p><strong>Naam:</strong> $name</p>
+            <p><strong>E-mail:</strong> $email</p>
+            <p><strong>Telefoon:</strong> ${phone}</p>
+            <p><strong>Datum:</strong> $date</p>
         </div>
         
         <div class="message-box">
-            <p><strong>Message:</strong></p>
+            <p><strong>Bericht:</strong></p>
             <p>$message</p>
         </div>
         
-        <p>Please respond to this inquiry at your earliest convenience.</p>
-        
         <div class="footer">
-            <p>This is an automated message from your website's contact form.</p>
+            <img src="cid:signature" alt="ApplyAI Signature" style="width: 350px; margin-top: 25px; margin-bottom: 15px;">
+            <p>Dit is een geautomatiseerd bericht van het contactformulier van de website.</p>
         </div>
     </div>
 </body>
