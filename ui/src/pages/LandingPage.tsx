@@ -17,19 +17,24 @@ export function LandingPage(): JSXElement {
 
   return (
     <BasePage title="Home">
-      <div class="flex justify-center items-center min-h-[90vh]">
-        <div>
-          <div class="flex justify-center items-center mb-8">
-            <img src="/applyai_logo.png" alt="ApplyAI Logo" class="h-36 mb-6" />
+      {/* Hero Section */}
+      <div class="flex justify-center items-center min-h-[90vh] px-4 sm:px-6 md:px-8">
+        <div class="w-full max-w-6xl">
+          <div class="flex flex-col sm:flex-row justify-center items-center mb-8 gap-4">
+            <img
+              src="/applyai_logo.png"
+              alt="ApplyAI Logo"
+              class="h-24 sm:h-28 md:h-36 mb-4 sm:mb-6"
+            />
 
-            <h1 class="text-8xl md:text-8xl font-bold">
+            <h1 class="text-5xl sm:text-6xl md:text-8xl font-bold text-center sm:text-left">
               <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
                 {t('applyai')}
               </span>
             </h1>
           </div>
 
-          <p class="text-2xl md:text-3xl mb-12 mx-auto">
+          <p class="text-xl sm:text-2xl md:text-3xl mb-12 text-center max-w-4xl mx-auto">
             {t('groningse_ai_local_honest_independent')}
           </p>
 
@@ -40,7 +45,7 @@ export function LandingPage(): JSXElement {
 
             <button
               onClick={() => setContactModalOpen(true)}
-              class="btn btn-btn-outline btn-lg"
+              class="btn btn-outline btn-lg"
             >
               {t('contact')}
             </button>
@@ -48,21 +53,27 @@ export function LandingPage(): JSXElement {
         </div>
       </div>
 
-      <div id="learn-more-section" class="container mx-auto mt-32 pt-32">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+      {/* About Section */}
+      <div
+        id="learn-more-section"
+        class="px-4 sm:px-6 md:px-8 max-w-7xl mx-auto mt-20 md:mt-32 pt-16 md:pt-32"
+      >
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
           <div>
-            <h2 class="text-3xl font-bold mb-6">{t('make_your_next_step')}</h2>
-            <p class="text-lg mb-4">{t('learn_more_p1')}</p>
-            <p class="text-lg mb-4">{t('learn_more_p2')}</p>
+            <h2 class="text-2xl sm:text-3xl font-bold mb-6">
+              {t('make_your_next_step')}
+            </h2>
+            <p class="text-base sm:text-lg mb-4">{t('learn_more_p1')}</p>
+            <p class="text-base sm:text-lg mb-6">{t('learn_more_p2')}</p>
 
             <button
               onClick={() => setContactModalOpen(true)}
-              class="btn btn-btn-outline btn-lg mb-4"
+              class="btn btn-outline btn-lg mb-4"
             >
               {t('contact')}
             </button>
           </div>
-          <div class="flex justify-center mt-10">
+          <div class="flex justify-center mt-6 md:mt-0">
             <img
               src="/groningen.jpg"
               alt="ApplyAI Team"
@@ -72,12 +83,19 @@ export function LandingPage(): JSXElement {
         </div>
       </div>
 
-      <div class="container mx-auto mt-64 mb-32">
-        <h2 class="text-3xl font-bold text-center mb-12">{t('what_we_do')}</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {/* Services Section */}
+      <div class="px-4 sm:px-6 md:px-8 max-w-7xl mx-auto mt-32 md:mt-64 mb-20 md:mb-32">
+        <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8 md:mb-12">
+          {t('what_we_do')}
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           <div class="card border shadow-md hover:border-primary hover:shadow-lg transition-all">
             <figure>
-              <img src="/groningen.jpg" alt="Shoes" />
+              <img
+                src="/groningen.jpg"
+                alt="Tailored AI"
+                class="w-full h-48 object-cover"
+              />
             </figure>
             <div class="card-body">
               <h3 class="card-title text-xl">{t('tailored_ai')}</h3>
@@ -95,7 +113,11 @@ export function LandingPage(): JSXElement {
 
           <div class="card border shadow-md hover:border-primary hover:shadow-lg transition-all">
             <figure>
-              <img src="/management_days.jpg" alt="Shoes" />
+              <img
+                src="/management_days.jpg"
+                alt="Management Days"
+                class="w-full h-48 object-cover"
+              />
             </figure>
             <div class="card-body">
               <h3 class="card-title text-xl">{t('management_days')}</h3>
@@ -113,7 +135,11 @@ export function LandingPage(): JSXElement {
 
           <div class="card border shadow-md hover:border-primary hover:shadow-lg transition-all">
             <figure>
-              <img src="/groningen.jpg" alt="Shoes" />
+              <img
+                src="/groningen.jpg"
+                alt="Structured Data"
+                class="w-full h-48 object-cover"
+              />
             </figure>
             <div class="card-body">
               <h3 class="card-title text-xl">{t('structured_data')}</h3>
