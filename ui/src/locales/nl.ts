@@ -70,6 +70,7 @@ export const dict = {
   management_days_p4: `Wij geloven dat je dit soort keuzes het beste maakt met een helder hoofd en frisse lucht. Daarom organiseren we onze managementdagen op de Enne Jans Heerd,
     vlak boven Winsum. Midden in het Groningse landschap, ver weg van de dagelijkse drukte, kun je met je team in alle rust nadenken over de rol 
     van AI in jouw bedrijf.`,
+  menu: 'Menu',
   name: 'Naam',
   new_password: 'Nieuw wachtwoord',
   no: 'Nee',
