@@ -1,6 +1,5 @@
 from datetime import datetime
 from string import Template
-import os
 
 from flask_mail import Message
 
@@ -93,4 +92,3 @@ def send_verification_email(*, email: str, verification_link: str):
     _attach_email_images(email_message)
 
     mail.send(email_message)
-
