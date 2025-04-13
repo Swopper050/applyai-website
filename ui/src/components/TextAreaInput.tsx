@@ -20,7 +20,6 @@ export function TextAreaInput(props: TextAreaInputProps) {
     'value',
     'label',
     'error',
-    'icon',
     'rows',
   ])
   return (
@@ -38,7 +37,7 @@ export function TextAreaInput(props: TextAreaInputProps) {
         )}
         <div
           class={clsx(
-            'textarea textarea-bordered flex items-start',
+            'textarea textarea-bordered flex items-start w-full',
             props.error !== '' && 'textarea-error'
           )}
         >
