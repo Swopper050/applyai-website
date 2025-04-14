@@ -4,6 +4,8 @@ export const dict: Translations = {
   hello_template: (name: string) => `Hello ${name}`,
   a_puppy: 'A puppy!',
   account: 'Account',
+  applyai: 'ApplyAI',
+  all_rights_reserved: 'All rights reserved.',
   are_you_sure_you_want_to_delete_your_account:
     'Are you sure you want to delete your account?',
   back_to_home: 'Back to home',
@@ -15,6 +17,9 @@ export const dict: Translations = {
   contact: 'Contact',
   could_not_log_out_please_try_again_later:
     'Could not log out, please try again later',
+  contact_us: 'Contact Us',
+  contact_form_submitted_successfully:
+    "Thank you for your message! We'll get back to you soon.",
   current_password: 'Current password',
   delete_account: 'Delete account',
   deleting: 'Deleting',
@@ -37,7 +42,26 @@ export const dict: Translations = {
   learn_more: 'Learn More',
   login: 'Login',
   logout: 'Logout',
-  applyai: 'ApplyAI',
+  make_your_next_step: 'Start now and discover what AI can do for you',
+  management_days: 'Management Days',
+  management_days_description:
+    'Your company, your AI strategy. We help you make the right choices.',
+  management_days_p1: `AI is rapidly changing the world. But how do you determine what role AI should play in your organization?
+    Where are the opportunities, and which developments should you consciously ignore? During our Management Days, 
+    we help you shape a strategic vision and develop a concrete action plan, so you can take control of AI within your company.`,
+  management_days_p2: `The day begins with two interactive theory sessions, where you choose what’s most relevant for your organization.
+    Do you want a technical deep dive to better understand how AI works? Or would you prefer insights into the latest tools, 
+    laws and regulations, or the impact on data and privacy? With up-to-date knowledge and clear explanations, you’ll gain 
+    a strong foundation to make informed decisions.`,
+  management_days_p3: `In the afternoon, we translate that knowledge to your company’s context. What does AI mean for your strategy?
+    How can you seize opportunities without becoming dependent on big tech players? Together, we work on a tailored plan 
+    for the coming months, aligned with your goals and values.`,
+  management_days_p4: `We believe these kinds of decisions are best made with a clear mind and fresh air. 
+    That’s why we host our Management Days at Enne Jans Heerd, just north of Winsum. 
+    In the heart of the Groningen countryside, far from daily distractions, you and your team can take the time 
+    to thoughtfully reflect on AI’s role in your business.`,
+  menu: 'Menu',
+  name: 'Name',
   new_password: 'New password',
   no: 'No',
   password: 'Password',
@@ -66,6 +90,35 @@ export const dict: Translations = {
     'Step 2: Verify the setup by filling in the 2FA code',
   successfully_reset_password: 'Successfully reset password',
   successfully_verified_email: 'Successfully verified email',
+  structured_data: 'Structure in your data, clarity in your business',
+  structured_data_menu: 'Set up data infrastructure',
+  structured_data_description: `A well-organized data environment helps you make faster and better decisions. 
+    We help you set up a scalable data infrastructure – from raw data 
+    to clear dashboards. Plus, it prepares you for the future with the rise of AI.`,
+  tailored_ai: 'Tailored AI',
+  tailored_ai_description:
+    'AI develops in Groningen for you. You name it, we build it.',
+  tailored_ai_p0: `Imagine this: a smart agent that automatically answers customer questions, 
+     a language model that summarizes internal documents, or a chatbot that helps 
+     your employees with daily tasks. Or how about AI that predicts risks, 
+     detects patterns in customer behavior, or drafts proposals based on previous projects? 
+     With tailored AI, you're using technology that's not only impressive, 
+     but also immediately adds value to your work. We build what you need.`,
+  tailored_ai_p1_heading: 'AI that fits your organization',
+  tailored_ai_p1: `Every organization is unique – with its own processes, people, values, and goals. 
+     We develop AI solutions that truly align with your reality. That starts with listening: 
+     what's happening in your organization, where are the questions and opportunities, 
+     and which values matter most to you?`,
+  tailored_ai_p2_heading: 'From idea to impact',
+  tailored_ai_p2: `Tailored AI means more than just clever algorithms. It’s about the full journey: 
+     from defining the right questions to implementing practical solutions that really work. 
+     That could be a predictive model, an automated process, or an intelligent tool for your team. 
+     Whatever it is – we make it understandable, reliable, and usable. So your people can truly benefit.`,
+  tailored_ai_p3_heading: 'Responsible and future-ready',
+  tailored_ai_p3: `We build technology with a long-term vision. No quick tricks, but solutions that 
+     strengthen your organization and align with your strategy. We take privacy, transparency, 
+     and sustainability into account – because AI should not only be smart, but also do good. 
+     Together, we ensure that technology works *for* people, not the other way around.`,
   this_action_cannot_be_undone: 'This action cannot be undone',
   this_is: 'This is ',
   this_is_the_home_page: 'This is the home page',
@@ -90,17 +143,6 @@ export const dict: Translations = {
   your_password_must_have_8_characters_or_more:
     'Your password must have 8 characters or more',
 
-  // New landing page translations
-  slogan: 'Transforming businesses with intelligent automation',
-  our_products: 'Our Products',
-  our_services: 'Our Services',
-  about_us: 'About Us',
-  about_us_p1:
-    'ApplyAI is a Groningen-based artificial intelligence company founded in 2023. We specialize in creating custom AI solutions that are ethical, transparent, and tailored to your specific business needs.',
-  about_us_p2:
-    'Our team of AI experts, data scientists, and software engineers work closely with clients to understand their challenges and develop innovative solutions that drive real business value.',
-  about_us_p3:
-    'What sets us apart is our commitment to local expertise, transparent AI systems, and independence from big tech companies. We believe AI should be accessible, understandable, and beneficial for businesses of all sizes.',
   product_ai_automation: 'AI Automation',
   product_ai_automation_desc:
     'Streamline your workflows with our advanced AI automation tools',
@@ -110,45 +152,15 @@ export const dict: Translations = {
   product_custom_solutions: 'Custom Solutions',
   product_custom_solutions_desc:
     'Tailored AI solutions designed for your specific business needs',
-  service_consulting: 'AI Consulting',
-  service_consulting_desc:
-    'Expert guidance to help you implement AI in your organization',
-  service_implementation: 'Implementation',
-  service_implementation_desc:
-    'End-to-end implementation of AI solutions for your business',
-  service_training: 'Training & Support',
-  service_training_desc:
-    'Comprehensive training and ongoing support for your team',
-  reference_company1: 'Acme Corp',
-  reference_company2: 'TechGlobal',
-  reference_company3: 'Innovate Inc',
-  reference_company4: 'Future Systems',
-  place_your_image_here: 'Place your image here',
 
-  // Contact form
-  contact_us: 'Contact Us',
-  contact_page_description:
-    "Have a question or want to learn more about our services? Fill out the form below and we'll get back to you as soon as possible.",
-  your_name: 'Your name',
   name: 'Name',
-  message: 'Message',
   enter_your_message: 'Enter your message here...',
   phone_placeholder: 'Phone number (optional)',
   please_enter_only_numbers: 'Please enter only numbers',
-  send_message: 'Send Message',
   send: 'Send',
   close: 'Close',
   please_enter_your_name: 'Please enter your name',
   please_enter_your_message: 'Please enter your message',
   please_enter_at_least_10_characters: 'Please enter at least 10 characters',
-  contact_form_submitted_successfully:
-    "Thank you for your message! We'll get back to you soon.",
-
-  // Footer
-  footer_description:
-    'Local AI solutions from Groningen. Ethical, transparent, and tailored to your business needs.',
-  quick_links: 'Quick Links',
-  connect_with_us: 'Connect With Us',
-  all_rights_reserved: 'All rights reserved.',
   something_went_wrong: 'Something went wrong. Please try again.',
 }

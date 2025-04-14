@@ -24,6 +24,9 @@ formatlint: format lint ## First format code, then run linters
 server: ## Start the development server
 	pnpm run dev
 
+sort-locales: ## Sort locale files alphabetically
+	node scripts/sort-locales.js
+
 docker_latest: ## Build a docker container and tag it with the current git version tag and 'latest'
 	docker build -t $(DOCKERHUB_NAMESPACE)/applyai-ui:$(VERSION) -t $(DOCKERHUB_NAMESPACE)/applyai-ui:latest .
 

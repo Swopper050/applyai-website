@@ -114,6 +114,28 @@ export const dict = {
   tailored_ai: 'AI op maat',
   tailored_ai_description:
     'AI ontwikkelt in Groningen voor jou. Jij bedenkt, wij bouwen.',
+  tailored_ai_p0: `Stel je voor: een slimme agent die automatisch klantvragen beantwoordt, een 
+     taalmodel dat interne documenten samenvat of een chatbot die je medewerkers 
+     helpt met dagelijkse taken. Of wat dacht je van AI die risico’s voorspelt, 
+     patronen ontdekt in klantgedrag of offertes opstelt op basis van eerdere opdrachten? 
+     Met AI op maat zet je technologie in die niet alleen indrukwekkend is, maar vooral ook 
+     direct waarde toevoegt aan je werk. Wij bouwen wat jij nodig hebt.`,
+  tailored_ai_p1_heading: 'AI die past bij jouw organisatie',
+  tailored_ai_p1: `Iedere organisatie is uniek – met eigen processen, mensen, waarden en doelen.
+    Wij ontwikkelen AI-toepassingen die écht aansluiten bij jouw praktijk. Dat begint met 
+    luisteren: wat speelt er binnen jouw organisatie, waar liggen de vragen en kansen, en 
+    welke waarden zijn voor jullie belangrijk?`,
+  tailored_ai_p2_heading: 'Van idee tot impact',
+  tailored_ai_p2: `AI op maat betekent meer dan alleen slimme algoritmes. Het gaat om het hele traject: 
+    van het scherp krijgen van de juiste vraag tot het implementeren van een concrete 
+    oplossing die werkt in de praktijk. Dat kan een voorspellend model zijn, een 
+    geautomatiseerd proces of een intelligente tool voor jouw medewerkers. Wat het ook is – 
+    we maken het begrijpelijk, betrouwbaar en bruikbaar. Zodat jouw mensen er echt iets aan hebben.`,
+  tailored_ai_p3_heading: 'Verantwoord en toekomstgericht',
+  tailored_ai_p3: `We bouwen technologie met oog voor de lange termijn. Geen snelle trucjes, maar oplossingen 
+    die je organisatie sterker maken en aansluiten bij je strategie. We houden rekening met 
+    privacy, transparantie en duurzaamheid – want AI moet niet alleen slim zijn, maar ook goed doen. 
+    Samen zorgen we dat technologie werkt vóór mensen, en niet andersom.`,
   this_action_cannot_be_undone: 'Deze actie kan niet ongedaan worden gemaakt',
   this_is: 'Dit is ',
   this_is_the_home_page: 'Dit is de home pagina',

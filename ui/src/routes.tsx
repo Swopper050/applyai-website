@@ -7,6 +7,7 @@ import { useUser } from './context/UserProvider'
 import { LandingPage } from './pages/LandingPage'
 import { VerifyEmailPage } from './pages/VerifyEmailPage'
 import { NotFoundPage } from './pages/NotFoundPage'
+import { TailoredAIPage } from './pages/TailoredAIPage'
 import { ManagementDaysPage } from './pages/ManagementDaysPage'
 import { ContactPage } from './pages/ContactPage'
 
@@ -38,6 +39,10 @@ export const routes: RouteDefinition[] = [
   {
     path: '/what-we-do/management-days',
     component: () => <ManagementDaysPage />,
+  },
+  {
+    path: '/what-we-do/tailored-ai',
+    component: () => <TailoredAIPage />,
   },
   {
     path: '/contact',

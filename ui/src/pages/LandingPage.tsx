@@ -90,7 +90,7 @@ export function LandingPage(): JSXElement {
           <div class="card border border-base-100 shadow-md hover:border-primary hover:shadow-lg transition-all">
             <figure>
               <img
-                src="/groningen.jpg"
+                src="/tailored_ai_koosdewit.jpg"
                 alt="Tailored AI"
                 class="w-full h-48 object-cover"
               />
