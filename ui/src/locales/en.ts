@@ -3,15 +3,18 @@ import { Translations } from '../context/LocaleProvider'
 export const dict: Translations = {
   hello_template: (name: string) => `Hello ${name}`,
   a_puppy: 'A puppy!',
+  about_applyai: 'About ApplyAI',
   account: 'Account',
   applyai: 'ApplyAI',
   all_rights_reserved: 'All rights reserved.',
   are_you_sure_you_want_to_delete_your_account:
     'Are you sure you want to delete your account?',
   back_to_home: 'Back to home',
+  blog: 'Blog',
   build: 'You can built whatever you want.',
   cancel: 'Cancel',
   change_password: 'Change password',
+  coming_soon: 'Coming soon',
   confirm_new_password: 'Confirm new password',
   confirm_password: 'Confirm password',
   contact: 'Contact',
@@ -40,6 +43,13 @@ export const dict: Translations = {
   if_a_user_with_this_email_exists_a_reset_password_mail_has_been_sent:
     'If a user with this email exists, a reset password mail has been sent',
   learn_more: 'Learn More',
+  learn_more_p1: `We live in a world where Artificial Intelligence (AI) brings unprecedented new opportunities, 
+    but also uncertainty and sometimes fear. What should we do with this technology? 
+    How do you take good care of people and the planet, while still making use of the best technology of our time? 
+    How do you prepare your company or employees for the changes that are coming? 
+    What opportunities are there for your business? And which ones do you consciously choose to pass up?`,
+  learn_more_p2: `We help you take the next step into the world of AI – a step that fits your business and your values. 
+    Get in touch for a completely free, no-obligation consultation.`,
   login: 'Login',
   logout: 'Logout',
   make_your_next_step: 'Start now and discover what AI can do for you',
@@ -142,7 +152,7 @@ export const dict: Translations = {
     'Your password must have 1 uppercase letter',
   your_password_must_have_8_characters_or_more:
     'Your password must have 8 characters or more',
-
+  what_we_do: 'What we do',
   product_ai_automation: 'AI Automation',
   product_ai_automation_desc:
     'Streamline your workflows with our advanced AI automation tools',
@@ -152,8 +162,6 @@ export const dict: Translations = {
   product_custom_solutions: 'Custom Solutions',
   product_custom_solutions_desc:
     'Tailored AI solutions designed for your specific business needs',
-
-  name: 'Name',
   enter_your_message: 'Enter your message here...',
   phone_placeholder: 'Phone number (optional)',
   please_enter_only_numbers: 'Please enter only numbers',
