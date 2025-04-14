@@ -27,7 +27,7 @@ export function LandingPage(): JSXElement {
             />
 
             <h1 class="text-5xl sm:text-6xl md:text-8xl font-bold text-center sm:text-left">
-              <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
+              <span class="text-transparent bg-clip-text bg-linear-to-r from-primary to-accent">
                 {t('applyai')}
               </span>
             </h1>
@@ -87,10 +87,10 @@ export function LandingPage(): JSXElement {
         </h2>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          <div class="card border shadow-md hover:border-primary hover:shadow-lg transition-all">
+          <div class="card border border-base-100 shadow-md hover:border-primary hover:shadow-lg transition-all">
             <figure>
               <img
-                src="/groningen.jpg"
+                src="/tailored_ai_koosdewit.jpg"
                 alt="Tailored AI"
                 class="w-full h-48 object-cover"
               />
@@ -110,7 +110,7 @@ export function LandingPage(): JSXElement {
             </div>
           </div>
 
-          <div class="card border shadow-md hover:border-primary hover:shadow-lg transition-all">
+          <div class="card border border-base-100 shadow-md hover:border-primary hover:shadow-lg transition-all">
             <figure>
               <img
                 src="/management_days.jpg"
@@ -133,7 +133,7 @@ export function LandingPage(): JSXElement {
             </div>
           </div>
 
-          <div class="card border shadow-md hover:border-primary hover:shadow-lg transition-all">
+          <div class="card border border-base-100 shadow-md hover:border-primary hover:shadow-lg transition-all">
             <figure>
               <img
                 src="/groningen.jpg"

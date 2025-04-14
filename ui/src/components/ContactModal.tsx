@@ -110,71 +110,73 @@ export function ContactModal(props: ModalBaseProps) {
             </Show>
           }
         >
-          <Contact.Field
-            name="name"
-            validate={[required(t('please_enter_your_name'))]}
-          >
-            {(field, props) => (
-              <TextInput
-                {...props}
-                type="text"
-                value={field.value}
-                error={field.error}
-                placeholder={t('name')}
-                icon={<i class="fa-solid fa-user text-primary" />}
-              />
-            )}
-          </Contact.Field>
+          <div class="w-full">
+            <Contact.Field
+              name="name"
+              validate={[required(t('please_enter_your_name'))]}
+            >
+              {(field, props) => (
+                <TextInput
+                  {...props}
+                  type="text"
+                  value={field.value}
+                  error={field.error}
+                  placeholder={t('name')}
+                  icon={<i class="fa-solid fa-user text-primary" />}
+                />
+              )}
+            </Contact.Field>
 
-          <Contact.Field
-            name="email"
-            validate={[
-              required(t('please_enter_your_email')),
-              email(t('please_enter_a_valid_email')),
-            ]}
-          >
-            {(field, props) => (
-              <TextInput
-                {...props}
-                type="email"
-                value={field.value}
-                error={field.error}
-                placeholder={t('email_placeholder')}
-                icon={<i class="fa-solid fa-envelope" />}
-              />
-            )}
-          </Contact.Field>
+            <Contact.Field
+              name="email"
+              validate={[
+                required(t('please_enter_your_email')),
+                email(t('please_enter_a_valid_email')),
+              ]}
+            >
+              {(field, props) => (
+                <TextInput
+                  {...props}
+                  type="email"
+                  value={field.value}
+                  error={field.error}
+                  placeholder={t('email_placeholder')}
+                  icon={<i class="fa-solid fa-envelope" />}
+                />
+              )}
+            </Contact.Field>
 
-          <Contact.Field name="phone">
-            {(field, props) => (
-              <TextInput
-                {...props}
-                type="tel"
-                value={field.value}
-                error={field.error}
-                placeholder={t('phone_placeholder')}
-                icon={<i class="fa-solid fa-phone" />}
-              />
-            )}
-          </Contact.Field>
+            <Contact.Field name="phone">
+              {(field, props) => (
+                <TextInput
+                  {...props}
+                  type="tel"
+                  value={field.value}
+                  error={field.error}
+                  placeholder={t('phone_placeholder')}
+                  icon={<i class="fa-solid fa-phone" />}
+                />
+              )}
+            </Contact.Field>
 
-          <Contact.Field
-            name="message"
-            validate={[
-              required(t('please_enter_your_message')),
-              minLength(10, t('please_enter_at_least_10_characters')),
-            ]}
-          >
-            {(field, props) => (
-              <TextAreaInput
-                {...props}
-                value={field.value}
-                error={field.error}
-                placeholder={t('enter_your_message')}
-                rows={6}
-              />
-            )}
-          </Contact.Field>
+            <Contact.Field
+              name="message"
+              validate={[
+                required(t('please_enter_your_message')),
+                minLength(10, t('please_enter_at_least_10_characters')),
+              ]}
+            >
+              {(field, props) => (
+                <TextAreaInput
+                  {...props}
+                  value={field.value}
+                  error={field.error}
+                  placeholder={t('enter_your_message')}
+                  rows={6}
+                />
+              )}
+            </Contact.Field>
+          </div>
 
           <Show when={contactForm.response.status === 'error'}>
             <Alert type="error" message={contactForm.response.message} />

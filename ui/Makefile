@@ -12,11 +12,11 @@ deps: ## Install all dependencies
 	pnpm install
 
 format: ## Format code with eslint and prettier
-	pnpm eslint $(LINT_FILES) --fix
+	pnpm eslint $(LINT_FILES) --fix --no-warn-ignored
 	pnpm prettier --write $(LINT_FILES)
 
 lint: ## Run lint check with eslint and prettier
-	pnpm eslint $(LINT_FILES)
+	pnpm eslint $(LINT_FILES) --no-warn-ignored
 	pnpm prettier --check $(LINT_FILES)
 
 formatlint: format lint ## First format code, then run linters

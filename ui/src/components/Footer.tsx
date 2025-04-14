@@ -1,9 +1,6 @@
 import { JSXElement } from 'solid-js'
-import { useLocale } from '../context/LocaleProvider'
 
 export function Footer(): JSXElement {
-  const { t } = useLocale()
-
   return (
     <footer class="bg-base-200 py-6 md:py-8">
       <div class="px-4 sm:px-6 md:px-8 max-w-7xl mx-auto">
@@ -37,7 +34,7 @@ export function Footer(): JSXElement {
               <span class="text-lg sm:text-xl font-bold">ApplyAI</span>
             </div>
             <p class="text-sm mt-2 text-center">
-              © {new Date().getFullYear()} ApplyAI. {t('all_rights_reserved')}
+              © {new Date().getFullYear()} ApplyAI
             </p>
           </div>
 
