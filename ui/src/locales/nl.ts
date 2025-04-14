@@ -145,6 +145,7 @@ export const dict = {
   want_to_show_puppies: "Wil je puppy's laten zien?",
   want_to_show_rocks: 'Wil je stenen laten zien?',
   web_application: 'web applicatie.',
+  what_we_do: 'Wat we doen',
   woops_i_forgot_my_password: 'Oeps, ik ben mijn wachtwoord vergeten',
   woops_this_page_does_not_exist: 'Oeps, deze pagina bestaat niet',
   yes: 'Ja',
@@ -159,15 +160,4 @@ export const dict = {
     'Je wachtwoord moet 1 hoofdletter bevatten',
   your_password_must_have_8_characters_or_more:
     'Je wachtwoord moet 8 tekens of meer bevatten',
-
-  what_we_do: 'Wat we doen',
-  product_ai_automation: 'AI Automatisering',
-  product_ai_automation_desc:
-    'Stroomlijn je workflows met onze geavanceerde AI-automatiseringstools',
-  product_data_analytics: 'Data Analyse',
-  product_data_analytics_desc:
-    'Zet je gegevens om in bruikbare inzichten met ons analyseplatform',
-  product_custom_solutions: 'Op maat gemaakte oplossingen',
-  product_custom_solutions_desc:
-    'Op maat gemaakte AI-oplossingen voor jouw specifieke bedrijfsbehoeften',
 }
