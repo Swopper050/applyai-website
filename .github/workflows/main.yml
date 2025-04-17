@@ -1,4 +1,4 @@
-name:
+name: Lints, tests and builds
 
 on:
   pull_request:
