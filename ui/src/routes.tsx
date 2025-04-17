@@ -8,7 +8,8 @@ import { LandingPage } from './pages/LandingPage'
 import { VerifyEmailPage } from './pages/VerifyEmailPage'
 import { NotFoundPage } from './pages/NotFoundPage'
 import { TailoredAIPage } from './pages/TailoredAIPage'
-import { ManagementDaysPage } from './pages/ManagementDaysPage'
+import { AIStrategyDayPage } from './pages/AIStrategyDayPage'
+import { StructuredDataPage } from './pages/StructuredDataPage'
 import { ContactPage } from './pages/ContactPage'
 
 export function ProtectedRoute(props: { route: () => JSXElement }): JSXElement {
@@ -37,12 +38,16 @@ export const routes: RouteDefinition[] = [
     component: () => <LandingPage />,
   },
   {
-    path: '/what-we-do/management-days',
-    component: () => <ManagementDaysPage />,
+    path: '/what-we-do/ai-strategy-day',
+    component: () => <AIStrategyDayPage />,
   },
   {
     path: '/what-we-do/tailored-ai',
     component: () => <TailoredAIPage />,
+  },
+  {
+    path: '/what-we-do/structured-data',
+    component: () => <StructuredDataPage />,
   },
   {
     path: '/contact',

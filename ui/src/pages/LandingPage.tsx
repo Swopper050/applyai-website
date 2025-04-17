@@ -113,18 +113,18 @@ export function LandingPage(): JSXElement {
           <div class="card border border-base-100 shadow-md hover:border-primary hover:shadow-lg transition-all">
             <figure>
               <img
-                src="/management_days.jpg"
-                alt="Management Days"
+                src="/strategy_day.jpg"
+                alt="AI Strategy Days"
                 class="w-full h-48 object-cover"
               />
             </figure>
 
             <div class="card-body">
-              <h3 class="card-title text-xl">{t('management_days')}</h3>
-              <p>{t('management_days_description')}</p>
+              <h3 class="card-title text-xl">{t('strategy_day')}</h3>
+              <p>{t('strategy_day_description')}</p>
               <div class="card-actions justify-end mt-4">
                 <A
-                  href="/what-we-do/management-days"
+                  href="/what-we-do/ai-strategy-day"
                   class="btn btn-md btn-primary"
                 >
                   {t('learn_more')}
@@ -147,7 +147,7 @@ export function LandingPage(): JSXElement {
               <p>{t('structured_data_description')}</p>
               <div class="card-actions justify-end mt-4">
                 <A
-                  href="/what-we-do/structured_data"
+                  href="/what-we-do/structured-data"
                   class="btn btn-md btn-primary"
                 >
                   {t('learn_more')}

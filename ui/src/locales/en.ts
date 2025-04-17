@@ -1,12 +1,19 @@
 import { Translations } from '../context/LocaleProvider'
 
 export const dict: Translations = {
-  hello_template: (name: string) => `Hello ${name}`,
   a_puppy: 'A puppy!',
   about_applyai: 'About ApplyAI',
   account: 'Account',
-  applyai: 'ApplyAI',
+  activity: 'Activity',
+  activity_description:
+    'After a morning full of technology, we take the time to let this sink in with a nice activity.',
+  ai_tools: 'AI tools',
+  ai_tools_description1:
+    'In this module, you’ll get an overview of the latest AI tools for text, image, data, and more – from ChatGPT and DALL·E to Copilot in Microsoft 365. You’ll learn how to use AI tools safely and effectively in your daily work, and what to look out for when choosing a tool. No hype, just clear explanations and practical applications.',
+  ai_tools_description2:
+    'At the end of this module, you’ll know which tools are interesting for your organization and how to get started with them.',
   all_rights_reserved: 'All rights reserved.',
+  applyai: 'ApplyAI',
   are_you_sure_you_want_to_delete_your_account:
     'Are you sure you want to delete your account?',
   back_to_home: 'Back to home',
@@ -14,21 +21,31 @@ export const dict: Translations = {
   build: 'You can built whatever you want.',
   cancel: 'Cancel',
   change_password: 'Change password',
+  choose_yourself: 'choose yourself',
   close: 'Close',
+  coffee_break: 'Coffee/tea break',
   coming_soon: 'Coming soon',
   confirm_new_password: 'Confirm new password',
   confirm_password: 'Confirm password',
   contact: 'Contact',
-  could_not_log_out_please_try_again_later:
-    'Could not log out, please try again later',
-  contact_us: 'Contact Us',
   contact_form_submitted_successfully:
     "Thank you for your message! We'll get back to you soon.",
+  contact_us: 'Contact Us',
+  could_not_log_out_please_try_again_later:
+    'Could not log out, please try again later',
   current_password: 'Current password',
+  data_and_privacy: 'Data and privacy',
+  data_and_privacy_description1:
+    'In this module, we look at the issue of data security and privacy. To understand this well, we delve into how to turn an AI model into a product. What does this involve? Where do AI models "run"? Where does your data go and how does that relate to the GDPR? Does every company train its own AI models, or is there a pattern to be found here?',
+  data_and_privacy_description2:
+    'At the end of the module, you’ll know exactly how to assess whether an AI application handles your data safely.',
   delete_account: 'Delete account',
   deleting: 'Deleting',
   disable_2fa: 'Disable 2FA',
   disabling: 'Disabling',
+  djembe: 'Djembe',
+  djembe_description:
+    'Out of your head and into your body with a speed course in playing the djembe. Nice and rhythmic and in nature.',
   email: 'Email',
   email_placeholder: 'your@email.com',
   enable_2fa: 'Enable 2FA',
@@ -42,8 +59,14 @@ export const dict: Translations = {
     'Groningen AI: local, transparant, independent',
   here_is_a_picture_of_a: 'Here is a picture of a ',
   home: 'Home',
+  how_does_ai_work: 'AI basis',
+  how_does_ai_work_description1:
+    'In this module, we dive deep! How does AI actually work? What underlies AI models? How are they trained? How can they ultimately exhibit intelligence? We will talk about everything, but we will especially zoom in on language models like ChatGPT and Claude.',
+  how_does_ai_work_description2:
+    'At the end of this module, you’ll have an intuition about how these models work and what you can and cannot expect from them.',
   if_a_user_with_this_email_exists_a_reset_password_mail_has_been_sent:
     'If a user with this email exists, a reset password mail has been sent',
+  knowledge_module: 'Knowledge module',
   learn_more: 'Learn More',
   learn_more_p1: `We live in a world where Artificial Intelligence (AI) brings unprecedented new opportunities, 
     but also uncertainty and sometimes fear. What should we do with this technology? 
@@ -52,26 +75,16 @@ export const dict: Translations = {
     What opportunities are there for your business? And which ones do you consciously choose to pass up?`,
   learn_more_p2: `We help you take the next step into the world of AI – a step that fits your business and your values. 
     Get in touch for a completely free, no-obligation consultation.`,
+  location: 'Location',
+  location_p1:
+    'The AI strategy day takes place at the Enne Jans Heerd, an ancient place just north of Winsum in the Groningen landscape. This is a unique place where you and your team can thoughtfully reflect on the role of AI in your business.',
+  location_p2:
+    'More information about the location can be found on the website of the Enne Jans Heerd.',
   login: 'Login',
   logout: 'Logout',
+  lunch: 'Lunch',
+  lunch_description: 'A delicious lunch on location with local products.',
   make_your_next_step: 'Start now and discover what AI can do for you',
-  management_days: 'Management Days',
-  management_days_description:
-    'Your company, your AI strategy. We help you make the right choices.',
-  management_days_p1: `AI is rapidly changing the world. But how do you determine what role AI should play in your organization?
-    Where are the opportunities, and which developments should you consciously ignore? During our Management Days, 
-    we help you shape a strategic vision and develop a concrete action plan, so you can take control of AI within your company.`,
-  management_days_p2: `The day begins with two interactive theory sessions, where you choose what’s most relevant for your organization.
-    Do you want a technical deep dive to better understand how AI works? Or would you prefer insights into the latest tools, 
-    laws and regulations, or the impact on data and privacy? With up-to-date knowledge and clear explanations, you’ll gain 
-    a strong foundation to make informed decisions.`,
-  management_days_p3: `In the afternoon, we translate that knowledge to your company’s context. What does AI mean for your strategy?
-    How can you seize opportunities without becoming dependent on big tech players? Together, we work on a tailored plan 
-    for the coming months, aligned with your goals and values.`,
-  management_days_p4: `We believe these kinds of decisions are best made with a clear mind and fresh air. 
-    That’s why we host our Management Days at Enne Jans Heerd, just north of Winsum. 
-    In the heart of the Groningen countryside, far from daily distractions, you and your team can take the time 
-    to thoughtfully reflect on AI’s role in your business.`,
   menu: 'Menu',
   name: 'Name',
   new_password: 'New password',
@@ -82,15 +95,19 @@ export const dict: Translations = {
   please_confirm_your_new_password: 'Please confirm your new password',
   please_enter_a_6_digit_code: 'Please enter a 6 digit code',
   please_enter_a_new_password: 'Please enter a new password',
-  please_enter_a_valid_email: 'Please enter a valid email',
   please_enter_a_valid_6_digit_code: 'Please enter a valid 6 digit code',
+  please_enter_a_valid_email: 'Please enter a valid email',
   please_enter_at_least_10_characters: 'Please enter at least 10 characters',
   please_enter_only_numbers: 'Please enter only numbers',
   please_enter_your_email: 'Please enter your email',
-  please_enter_your_name: 'Please enter your name',
   please_enter_your_message: 'Please enter your message',
+  please_enter_your_name: 'Please enter your name',
   preikestolen: 'Preikestolen',
   products_and_services: 'Products and Services',
+  program: 'Day program',
+  program_introduction: 'Introduction and getting to know each other',
+  program_introduction_description:
+    'We start the day with a short and powerful introduction and an introduction to AI!',
   puppy: 'puppy',
   regenerate_qr_code: 'Regenerate QR code',
   register: 'Register',
@@ -107,13 +124,40 @@ export const dict: Translations = {
     'Step 1: Scan QR code with your authenticator app',
   step_2_verify_the_setup_by_filling_in_the_2fa_code:
     'Step 2: Verify the setup by filling in the 2FA code',
-  successfully_reset_password: 'Successfully reset password',
-  successfully_verified_email: 'Successfully verified email',
+  strategy_day: 'AI Strategy Day',
+  strategy_day_description:
+    'Your company, your AI strategy. We help you make the right choices.',
+  strategy_day_p1: `AI is rapidly changing the world. But how do you determine what role AI should play in your organization?
+    Where are the opportunities, and which developments should you consciously ignore? During our AI strategy day, 
+    we help you shape a strategic vision and develop a concrete action plan, so you can take control of AI within your company.`,
+  strategy_day_p2: `The day begins with two interactive theory sessions, where you choose what’s most relevant for your organization.
+    Do you want a technical deep dive to better understand how AI works? Or would you prefer insights into the latest tools, 
+    laws and regulations, or the impact on data and privacy? With up-to-date knowledge and clear explanations, you’ll gain 
+    a strong foundation to make informed decisions.`,
+  strategy_day_p3: `In the afternoon, we translate that knowledge to your company’s context. What does AI mean for your strategy?
+    How can you seize opportunities without becoming dependent on big tech players? Together, we work on a tailored plan 
+    for the coming months, aligned with your goals and values.`,
+  strategy_day_p4: `We believe these kinds of decisions are best made with a clear mind and fresh air. 
+    That’s why we host our AI strategy day at Enne Jans Heerd, just north of Winsum. 
+    In the heart of the Groningen countryside, far from daily distractions, you and your team can take the time 
+    to thoughtfully reflect on AI’s role in your business.`,
+  strategy_formation: 'Your AI strategy',
+  strategy_formation_description1:
+    'With the new information of the day, we will form the AI strategy for your company or team. What opportunities do you see? What dangers do you see? Which pieces of AI do you embrace and which do you not? With the help of a practical strategy model (such as the Business Model Canvas or OGSM), we translate all new insights into concrete plans.',
+  strategy_formation_description2:
+    'This way you go home with more than just inspiration: you have a first version of a supported AI strategy that gives direction for the coming months.',
   structured_data: 'Structure in your data, clarity in your business',
-  structured_data_menu: 'Set up data infrastructure',
   structured_data_description: `A well-organized data environment helps you make faster and better decisions. 
     We help you set up a scalable data infrastructure – from raw data 
     to clear dashboards. Plus, it prepares you for the future with the rise of AI.`,
+  structured_data_menu: 'Set up data infrastructure',
+  structured_data_p0:
+    'Structure in your information – from work processes to customer questions to internal documents – is the basis for smart applications that make your work easier. Whether you want to make decisions faster, automate processes, or gain insight into customer behavior: it all starts with clarity.',
+  structured_data_p1:
+    'We help you make data accessible with tools like Power BI, custom dashboards, or automated reports. No more endless spreadsheets, but clear visualizations and insight at the right time. So you can see what’s really going on in your organization – and act on it.',
+  structured_data_p1_heading: 'From data to dashboard',
+  successfully_reset_password: 'Successfully reset password',
+  successfully_verified_email: 'Successfully verified email',
   tailored_ai: 'Tailored AI',
   tailored_ai_description:
     'AI develops in Groningen for you. You name it, we build it.',
@@ -123,33 +167,37 @@ export const dict: Translations = {
      detects patterns in customer behavior, or drafts proposals based on previous projects? 
      With tailored AI, you're using technology that's not only impressive, 
      but also immediately adds value to your work. We build what you need.`,
-  tailored_ai_p1_heading: 'AI that fits your organization',
   tailored_ai_p1: `Every organization is unique – with its own processes, people, values, and goals. 
      We develop AI solutions that truly align with your reality. That starts with listening: 
      what's happening in your organization, where are the questions and opportunities, 
      and which values matter most to you?`,
-  tailored_ai_p2_heading: 'From idea to impact',
+  tailored_ai_p1_heading: 'AI that fits your organization',
   tailored_ai_p2: `Tailored AI means more than just clever algorithms. It’s about the full journey: 
      from defining the right questions to implementing practical solutions that really work. 
      That could be a predictive model, an automated process, or an intelligent tool for your team. 
      Whatever it is – we make it understandable, reliable, and usable. So your people can truly benefit.`,
-  tailored_ai_p3_heading: 'Responsible and future-ready',
+  tailored_ai_p2_heading: 'From idea to impact',
   tailored_ai_p3: `We build technology with a long-term vision. No quick tricks, but solutions that 
      strengthen your organization and align with your strategy. We take privacy, transparency, 
      and sustainability into account – because AI should not only be smart, but also do good. 
      Together, we ensure that technology works *for* people, not the other way around.`,
+  tailored_ai_p3_heading: 'Responsible and future-ready',
   this_action_cannot_be_undone: 'This action cannot be undone',
   this_is: 'This is ',
   this_is_the_home_page: 'This is the home page',
   this_user_is_an_admin: 'This user is an admin',
   to_the_app: 'To the app',
   verifying_email: 'Verifying email',
+  walk_mound: 'Walk over the mound',
+  walk_mound_description:
+    'A quiet walk over the mound of Enne Jans Heerd. Owner Gijs van Rhijn takes you into the beautiful nature of Groningen.',
   want_to_show_puppies: 'Want to show puppies?',
   want_to_show_rocks: 'Want to show rocks?',
   web_application: 'web application.',
   what_we_do: 'What we do',
   woops_i_forgot_my_password: 'Woops, I forgot my password',
   woops_this_page_does_not_exist: 'Woops, this page does not exist',
+  wrapup: 'Wrap-up and drinks',
   yes: 'Yes',
   you_can: 'You can!',
   your: 'your ',

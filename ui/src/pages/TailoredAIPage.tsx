@@ -11,7 +11,7 @@ export function TailoredAIPage(): JSXElement {
   return (
     <BasePage title={t('tailored_ai')}>
       <div class="px-4 sm:px-6 md:px-8 max-w-7xl mx-auto mt-16 mb-20 md:mb-32">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-start">
+        <div class="grid grid-cols-1 flex md:grid-cols-2 gap-8 md:gap-16 items-start">
           <div>
             <h1 class="text-2xl sm:text-3xl font-bold mb-6">
               {t('tailored_ai')}
@@ -49,15 +49,15 @@ export function TailoredAIPage(): JSXElement {
             </button>
           </div>
 
-          <div class="flux justify-center mt-6 md:mt-0">
+          <div class="flex items-center justify-center mt-6 md:mt-0 h-full">
             <figure class="text-center">
               <img
-                src="/tailored_ai_koosdewit.jpg"
-                alt="Tailored AI"
+                src="/koosdewit_zuiderhaven.jpeg"
+                alt="Zuiderhaven met uitzicht op de AA-kerk van Koos de Wit"
                 class="rounded-lg shadow-xl max-w-full h-auto"
               />
               <figcaption class="text-sm text-gray-500 mt-2">
-                Tailored AI by Koos de Wit
+                Zuiderhaven met uitzicht op de AA-kerk van Koos de Wit
               </figcaption>
             </figure>
           </div>

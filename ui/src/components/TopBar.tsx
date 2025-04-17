@@ -56,16 +56,16 @@ export function TopBar(): JSXElement {
                   </li>
                   <li>
                     <A
-                      href="/what-we-do/management-days"
+                      href="/what-we-do/ai-strategy-day"
                       activeClass="font-bold"
                       end
                     >
-                      {t('management_days')}
+                      {t('strategy_day')}
                     </A>
                   </li>
                   <li>
                     <A
-                      href="/what-we-do/structered-data"
+                      href="/what-we-do/structured-data"
                       activeClass="font-bold"
                       end
                     >
@@ -153,18 +153,18 @@ export function TopBar(): JSXElement {
                 </li>
                 <li>
                   <A
-                    href="/what-we-do/management-days"
+                    href="/what-we-do/ai-strategy-day"
                     class="text-lg py-2"
                     activeClass="font-bold"
                     end
                     onClick={closeSidebar}
                   >
-                    {t('management_days')}
+                    {t('strategy_day')}
                   </A>
                 </li>
                 <li>
                   <A
-                    href="/what-we-do/structered-data"
+                    href="/what-we-do/structured-data"
                     class="text-lg py-2"
                     activeClass="font-bold"
                     end
