@@ -90,8 +90,8 @@ export function LandingPage(): JSXElement {
           <div class="card border border-base-100 shadow-md hover:border-primary hover:shadow-lg transition-all">
             <figure>
               <img
-                src="/tailored_ai_koosdewit.jpg"
-                alt="Tailored AI"
+                src="/koosdewit_zuiderhaven.jpeg"
+                alt="Zuiderhaven met uitzicht op de AA-kerk door Koos de Wit"
                 class="w-full h-48 object-cover"
               />
             </figure>
