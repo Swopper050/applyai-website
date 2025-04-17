@@ -30,3 +30,18 @@ docker_latest: ## Build a docker container and tag it with the current git versi
 docker_push: ## Push the odcker containers with the current git version tag and 'latest'
 	docker push $(DOCKERHUB_NAMESPACE)/applyai-ui:$(VERSION)
 	docker push $(DOCKERHUB_NAMESPACE)/applyai-ui:latest
+
+
+find_unused_translations: ## Finds translation keys in the 'nl' locale that are not used in the application
+	python scripts/find_unused_translations.py
+
+add_missing_translations: ## Adds missing translation keys to all locales, based on the default 'nl' locale
+	python scripts/add_missing_translations.py
+
+check_unused_translations: ## Checks for unused translations and fails if any are found (for CI)
+	python scripts/find_unused_translations.py --ci
+
+check_missing_translations: ## Checks for missing translations and fails if any are found (for CI)
+	python scripts/add_missing_translations.py --ci
+
+check_translations: check_unused_translations check_missing_translations ## Runs all translation checks for CI
