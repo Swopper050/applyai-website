@@ -286,7 +286,7 @@ export function AIStrategyDayPage(): JSXElement {
             </div>
             <div class="timeline-end timeline-box mt-2 mb-10">
               <time class="text-lg font-mono">16:30</time>
-              <div class="text-lg font-black">{t('runout')}</div>
+              <div class="text-lg font-black">{t('wrapup')}</div>
             </div>
           </li>
         </ul>
