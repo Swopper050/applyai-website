@@ -33,7 +33,7 @@ export const dict = {
   current_password: 'Huidig wachtwoord',
   data_and_privacy: 'Data en privacy',
   data_and_privacy_description1:
-    "In deze module kijken we naar het vraagstuk over veiligheid en privacy van data. Om dit goed te begrijpen, verdiepen we ons in hoe je van een AI model een product maakt. Wat komt hierbij kijken? Waar 'draaien' AI modellen dan? Waar gaat je data dan heen en hoe verhoud dat zich tot de AVG? Trained elk bedrijf zijn eigen AI modellen, of is hier een patroon in te vinden?",
+    "In deze module kijken we naar het vraagstuk over veiligheid en privacy van data. Om dit goed te begrijpen, verdiepen we ons in hoe je van een AI model een product maakt. Wat komt hierbij kijken? Waar 'draaien' AI modellen dan? Waar gaat je data dan heen en hoe verhoudt dat zich tot de AVG? Traint elk bedrijf zijn eigen AI modellen, of is hier een patroon in te vinden?",
   data_and_privacy_description2:
     'Aan het eind van de module weet je precies hoe je kan beoordelen of een AI applicatie veilig met je data omgaat.',
   delete_account: 'Account verwijderen',
@@ -62,7 +62,7 @@ export const dict = {
   how_does_ai_work_description1:
     'In deze module duiken we de diepte in! Hoe werkt AI nu precies? Wat ligt er ten grondslag aan AI modellen? Hoe worden deze getrained? Hoe kan het dat ze uiteindelijk intelligentie vertonen? We gaan het hebben over van alles, maar vooral zoomen we ook in op taalmodellen zoals ChatGPT en Claude.',
   how_does_ai_work_description2:
-    'Aan het eind van deze module heb je een intuitie over hoe deze modellen werken en wat je er wel of niet van kan verwachten.',
+    'Aan het eind van deze module heb je een intuïtie over hoe deze modellen werken en wat je er wel of niet van kan verwachten.',
   if_a_user_with_this_email_exists_a_reset_password_mail_has_been_sent:
     'Als een gebruiker met dit e-mailadres bestaat, is er een e-mail voor het opnieuw instellen van het wachtwoord verzonden',
   program_introduction: 'Introductie en kennismaking',
@@ -116,7 +116,7 @@ export const dict = {
   send_reset_email: 'Stuur e-mail voor wachtwoord reset',
   send: 'Verstuur',
   sending: 'Verzenden',
-  strategy_day: 'AI Strategiedag',
+  strategy_day: 'AI strategie dag',
   strategy_day_description:
     'Jouw bedrijf, jouw AI-strategie. Wij helpen je de juiste keuzes te maken.',
   strategy_day_p1: `AI verandert de wereld in hoog tempo. Maar hoe bepaal je welke rol AI in jouw organisatie moet spelen?
@@ -129,7 +129,7 @@ export const dict = {
   strategy_day_p3: `In de middag vertalen we die kennis naar jouw bedrijf. Wat betekent AI voor jouw strategie? Hoe benut 
     je kansen zonder je afhankelijk te maken van grote techspelers? Samen werken we aan een plan voor de komende
     maanden, afgestemd op jouw doelen en waarden.`,
-  strategy_day_p4: `Wij geloven dat je dit soort keuzes het beste maakt met een helder hoofd en frisse lucht. Daarom organiseren we onze strategydagen op de Enne Jans Heerd,
+  strategy_day_p4: `Wij geloven dat je dit soort keuzes het beste maakt met een helder hoofd en frisse lucht. Daarom organiseren we onze strategie dagen op de Enne Jans Heerd,
     vlak boven Winsum. Midden in het Groningse landschap, ver weg van de dagelijkse drukte, kun je met je team in alle rust nadenken over de rol 
     van AI in jouw bedrijf.`,
   strategy_formation: 'Jullie AI strategie',
